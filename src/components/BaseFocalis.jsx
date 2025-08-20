@@ -68,8 +68,8 @@ export default function BrochureFocalis() {
       <div className="min-h-screen w-full bg-[rgb(241,245,249)] p-6">
         <div className="mx-auto max-w-7xl">
           <div className="mb-6">
-            <h1 className="text-2xl font-bold text-slate-800">FOCALIS – Propuesta de brochure (4 caras)</h1>
-            <p className="text-slate-600">Portada, interior 1, interior 2 y reverso en un solo vistazo. Diseño pensado para impresión y distribución digital.</p>
+            <h1 className="text-2xl font-bold text-slate-800">BROCHURE - FOCALIS STRATEGA GROUP</h1>
+            <p className="text-slate-600">Estrategas de proyectos.</p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {/* PORTADA */}
