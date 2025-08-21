@@ -1,10 +1,12 @@
-# Astro Starter Kit: Basics
+# FOCALIS STRATEGA GROUP
 
-```sh
-npm create astro@latest -- --template basics
-```
+Estrategia, IA y sostenibilidad para convertir proyectos en resultados verificables y valor empresarial.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Astro Website
+
+**Deployed 🧑‍🚀:**
+
+> https://focalis-stratega-group.pages.dev/ 
 
 ## 🚀 Project Structure
 
