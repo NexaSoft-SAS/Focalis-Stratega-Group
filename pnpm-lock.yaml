@@ -38,6 +38,9 @@ importers:
       react-dom:
         specifier: ^19.1.1
         version: 19.1.1(react@19.1.1)
+      simple-icons:
+        specifier: ^15.11.0
+        version: 15.11.0
       tailwindcss:
         specifier: ^4.1.12
         version: 4.1.12
@@ -1849,6 +1852,10 @@ packages:
 
   shiki@3.11.0:
     resolution: {integrity: sha512-VgKumh/ib38I1i3QkMn6mAQA6XjjQubqaAYhfge71glAll0/4xnt8L2oSuC45Qcr/G5Kbskj4RliMQddGmy/Og==}
+
+  simple-icons@15.11.0:
+    resolution: {integrity: sha512-hHgDvNcbIdE5e6thY19Ao1VEI4CectXDNB0+nXOLCBf3ApuzeMm4tAhWzeR9qZdt/GoeQs1nm9JTVzCVBuX1nA==}
+    engines: {node: '>=0.12.18'}
 
   simple-swizzle@0.2.2:
     resolution: {integrity: sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==}
@@ -4253,6 +4260,8 @@ snapshots:
       '@shikijs/types': 3.11.0
       '@shikijs/vscode-textmate': 10.0.2
       '@types/hast': 3.0.4
+
+  simple-icons@15.11.0: {}
 
   simple-swizzle@0.2.2:
     dependencies:
