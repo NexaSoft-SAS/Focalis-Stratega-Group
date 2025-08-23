@@ -20,6 +20,7 @@ import {
 import facebookLogo from "@/assets/facebook.svg";
 import instagramLogo from "@/assets/instagram.svg";
 import youtubeLogo from "@/assets/youtube.svg";
+import focalisLogo from "@/assets/Logo Focalis V1.png";
 
 // --- Theme tokens (puedes ajustar aquí los colores si ya tienes manual de marca) ---
 const brand = {
@@ -89,7 +90,7 @@ const PageFrame = ({
             fill="none"
           />
         </svg>
-        <div className="absolute inset-0 p-8 flex flex-col text-white">
+        <div className="absolute inset-0 p-8 flex flex-col text-white overflow-y-scroll">
           {children}
         </div>
       </div>
@@ -141,10 +142,10 @@ export default function BrochureFocalis() {
       <div className="min-h-screen w-full bg-[rgb(241,245,249)] p-6">
         <div className="mx-auto max-w-7xl">
           <div className="mb-6">
-            <h1 className="text-2xl font-bold text-slate-800">
+            {/* <h1 className="text-2xl font-bold text-slate-800">
               BROCHURE - FOCALIS STRATEGA GROUP
             </h1>
-            <p className="text-slate-600">Estrategas de proyectos.</p>
+            <p className="text-slate-600">Estrategas de proyectos.</p> */}
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {/* PORTADA */}
@@ -154,15 +155,19 @@ export default function BrochureFocalis() {
             >
               <PageFrame>
                 <div className="flex items-start justify-between">
-                  <div>
-                    <div className="text-sm tracking-widest uppercase opacity-90">
-                      FOCALIS STRATEGA GROUP
-                    </div>
-                    <div className="mt-1 text-[0.8rem] opacity-80">
+                  <div className="me-5">
+                    <img
+                      src={focalisLogo.src}
+                      width="148"
+                      height="63"
+                      alt="Focalis Logo"
+                      className="py-1 px-3"
+                    />
+                    <div className="mt-1 text-[0.8rem] opacity-80 text-nowrap">
                       Estrategas de proyectos
                     </div>
                   </div>
-                  <div className="flex gap-2">
+                  <div className="flex gap-2 md:flex-row flex-col">
                     <Badge>Energía y Agua</Badge>
                     <Badge>Transformación Digital</Badge>
                     <Badge>Desarrollo Sostenible</Badge>
@@ -358,11 +363,11 @@ export default function BrochureFocalis() {
                           </span>
                         </li>
                       </ul>
-                      <div className="mt-3 flex flex-wrap gap-2 text-xs">
+                      {/* <div className="mt-3 flex flex-wrap gap-2 text-xs">
                         <Badge>Energía y Agua</Badge>
                         <Badge>Transformación Digital</Badge>
                         <Badge>Desarrollo Sostenible</Badge>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                   <div className="mt-auto flex items-center justify-between pt-4">
@@ -385,10 +390,13 @@ export default function BrochureFocalis() {
             >
               <PageFrame>
                 <div className="flex flex-col h-full">
-                  <div className="grid grid-cols-2 gap-4 mt-auto">
+                  <div className="grid sm:grid-cols-2 gap-4 mt-auto grid-rows-1">
                     <div className="bg-white/10 rounded-xl p-4 border border-white/15">
                       <h4 className="font-semibold mb-2">Contacto</h4>
                       <div className="grid gap-2 text-sm">
+                        <div className="text-sm tracking-widest uppercase opacity-90">
+                          FOCALIS STRATEGA GROUP
+                        </div>
                         <div className="flex items-center gap-2">
                           <Mail className="w-4 h-4" />
                           <a
