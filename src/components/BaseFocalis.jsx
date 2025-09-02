@@ -21,6 +21,7 @@ import facebookLogo from "@/assets/facebook.svg";
 import instagramLogo from "@/assets/instagram.svg";
 import youtubeLogo from "@/assets/youtube.svg";
 import focalisLogo from "@/assets/Logo Focalis V1.png";
+import QrCodeFocalis from "@/assets/qrcodefocalis.png";
 
 // --- Theme tokens (puedes ajustar aquí los colores si ya tienes manual de marca) ---
 const brand = {
@@ -118,7 +119,7 @@ const ServiceCard = ({ icon: Icon, title, bullets, dark = false }) => (
       </div>
       <h4 className="font-semibold leading-tight">{title}</h4>
     </div>
-    <ul className="text-sm leading-relaxed grid gap-1">
+    <ul className="text-sm leading-relaxed hidden sm:grid gap-1">
       {bullets.map((b, i) => (
         <li key={i} className="flex gap-2">
           <span className="mt-1 block w-1.5 h-1.5 rounded-full bg-current/60"></span>
@@ -141,12 +142,6 @@ export default function BrochureFocalis() {
     <MotionConfig transition={{ duration: 0.6, ease: "easeOut" }}>
       <div className="min-h-screen w-full bg-[rgb(241,245,249)] p-6">
         <div className="mx-auto max-w-7xl">
-          <div className="mb-6">
-            {/* <h1 className="text-2xl font-bold text-slate-800">
-              BROCHURE - FOCALIS STRATEGA GROUP
-            </h1>
-            <p className="text-slate-600">Estrategas de proyectos.</p> */}
-          </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {/* PORTADA */}
             <motion.div
@@ -175,15 +170,13 @@ export default function BrochureFocalis() {
                 </div>
                 <div className="mt-auto">
                   <h2 className="text-4xl lg:text-5xl font-extrabold leading-tight">
-                    Portafolio de Servicios
+                    FOCALIS STRATEGA GROUP
                   </h2>
                   <p className="mt-4 max-w-2xl text-white/90 text-lg">
                     Estrategia, gerencia integral e IA para convertir proyectos
-                    en resultados verificables y valor empresarial. Nuestra
-                    garantía: dirección técnica impecable, innovación aplicada y
-                    trazabilidad total.
+                    en resultados verificables y valor empresarial.
                   </p>
-                  <div className="mt-6 flex items-center gap-3">
+                  <div className="mt-6 flex flex-wrap items-center gap-3">
                     <SmallStat label="Estándares" value="ISO/IEC · PMI" />
                     <SmallStat label="Enfoque" value="ROI + Cumplimiento" />
                     <SmallStat label="Trazabilidad" value="100%" />
@@ -201,10 +194,10 @@ export default function BrochureFocalis() {
                 <div className="text-slate-900 flex flex-col h-full">
                   <div className="flex items-start justify-between">
                     <h3
-                      className="text-xl font-bold"
+                      className="text-xl font-bold hidden sm:block"
                       style={{ color: brand.primary }}
                     >
-                      Servicios (I)
+                      Portafolio de Servicios (I)
                     </h3>
                     <div className="flex gap-2">
                       <Badge>Gobierno & Dirección</Badge>
@@ -283,10 +276,10 @@ export default function BrochureFocalis() {
                 <div className="text-slate-900 flex flex-col h-full">
                   <div className="flex items-start justify-between">
                     <h3
-                      className="text-xl font-bold"
+                      className="text-xl font-bold hidden sm:block"
                       style={{ color: brand.primary }}
                     >
-                      Servicios (II)
+                      Portafolio de Servicios (II)
                     </h3>
                     <div className="flex gap-2">
                       <Badge>Escalabilidad & Marca</Badge>
@@ -333,7 +326,7 @@ export default function BrochureFocalis() {
                         <ShieldCheck className="w-5 h-5" />
                         Metodología y Diferenciales
                       </h4>
-                      <ul className="text-sm grid gap-1">
+                      <ul className="text-sm hidden sm:grid gap-1">
                         <li className="flex gap-2">
                           <span className="mt-1 block w-1.5 h-1.5 rounded-full bg-slate-400"></span>
                           <span>
@@ -363,11 +356,6 @@ export default function BrochureFocalis() {
                           </span>
                         </li>
                       </ul>
-                      {/* <div className="mt-3 flex flex-wrap gap-2 text-xs">
-                        <Badge>Energía y Agua</Badge>
-                        <Badge>Transformación Digital</Badge>
-                        <Badge>Desarrollo Sostenible</Badge>
-                      </div> */}
                     </div>
                   </div>
                   <div className="mt-auto flex items-center justify-between pt-4">
@@ -383,6 +371,31 @@ export default function BrochureFocalis() {
               </PageFrame>
             </motion.div>
 
+            {/* INTERIOR 3 */}
+            {/* <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+            >
+              <PageFrame bg="from-white to-white" bleed>
+                <div className="text-slate-900 flex flex-col h-full">
+                  <div className="mb-6">
+                    <h1 className="text-2xl font-bold text-slate-800">
+                      Sostenibilidad y Renovación
+                    </h1>
+                    <p className="text-slate-600">
+                      Nuestra garantía: dirección técnica impecable, innovación
+                      aplicada y trazabilidad total.
+                    </p>
+                    <div className="mt-3 flex flex-wrap gap-2 text-xs">
+                      <Badge>Energía y Agua</Badge>
+                      <Badge>Transformación Digital</Badge>
+                      <Badge>Desarrollo Sostenible</Badge>
+                    </div>
+                  </div>
+                </div>
+              </PageFrame>
+            </motion.div> */}
+
             {/* REVERSO */}
             <motion.div
               initial={{ opacity: 0, y: 12 }}
@@ -397,7 +410,7 @@ export default function BrochureFocalis() {
                         <div className="text-sm tracking-widest uppercase opacity-90">
                           FOCALIS STRATEGA GROUP
                         </div>
-                        <div className="flex items-center gap-2">
+                        <div className="flex flex-wrap items-center gap-2">
                           <Mail className="w-4 h-4" />
                           <a
                             href="mailto:focalisstrategagroup@gmail.com?&subject=Solicitud%20de%20información&body=Hola%20quiero%20recibir%20información%20del%20servicio%20de%20..."
@@ -461,8 +474,16 @@ export default function BrochureFocalis() {
                     </div>
                     <div className="bg-white/10 rounded-xl p-4 border border-white/15 flex items-center justify-center">
                       <div className="text-center">
-                        <div className="mx-auto w-28 h-28 rounded-xl bg-white/90 text-slate-900 flex items-center justify-center">
-                          <QrCode className="w-10 h-10" />
+                        <div className="mx-auto w-32 h-32 rounded-xl bg-white/90 text-slate-900 flex items-center justify-center">
+                          <img
+                            className="p-1"
+                            src={QrCodeFocalis.src}
+                            width="148"
+                            height="148"
+                            alt="QrCode Focalis WhatsApp"
+                            id="qrcodefocalis"
+                          />
+                          {/* <QrCode className="w-10 h-10" /> */}
                         </div>
                         <div className="mt-2 text-xs opacity-90">
                           Escanea para conocer casos y metodologías
