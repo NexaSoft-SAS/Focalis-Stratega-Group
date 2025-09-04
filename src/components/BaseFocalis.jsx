@@ -149,7 +149,7 @@ export default function BrochureFocalis() {
               animate={{ opacity: 1, y: 0 }}
             >
               <PageFrame>
-                <div className="flex items-start justify-between">
+                <div className="flex flex-col sm:flex-row items-start justify-between">
                   <div className="me-5">
                     <img
                       src={focalisLogo.src}
@@ -162,7 +162,7 @@ export default function BrochureFocalis() {
                       Estrategas de proyectos
                     </div>
                   </div>
-                  <div className="flex gap-2 md:flex-row flex-col">
+                  <div className="flex gap-2 md:flex-row flex-col p-4">
                     <Badge>Energía y Agua</Badge>
                     <Badge>Transformación Digital</Badge>
                     <Badge>Desarrollo Sostenible</Badge>
