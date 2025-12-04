@@ -1,0 +1,21 @@
+---
+import "../styles/global.css";
+import Layout from "../layouts/Layout.astro";
+import SustainabilityWidget from "../components/SustainabilityWidget/SustainabilityWidget";
+
+const handleFormSubmit = (formData) => {
+    console.log("Sustainability form submitted:", formData);
+};
+---
+
+<Layout title="Sostenibilidad Empresarial">
+    <div
+        class="min-h-screen bg-gradient-to-br from-gray-50 via-green-50 to-emerald-50 py-8 px-4"
+    >
+        <SustainabilityWidget
+            client:only="react"
+            title="Dashboard de Sostenibilidad Empresarial"
+            subtitle="Transforme su estrategia empresarial con soluciones sostenibles que generan valor medible. Reduzca costos, mejore su reputación y cumpla objetivos ESG."
+        />
+    </div>
+</Layout>

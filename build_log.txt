@@ -1,0 +1,36 @@
+npm warn Unknown user config "python". This will stop working in the next major version of npm.
+
+> astro@0.0.1 build
+> astro build
+
+17:35:46 [@astrojs/cloudflare] Enabling sessions with Cloudflare KV with the "SESSION" KV binding.
+17:35:46 [@astrojs/cloudflare] If you see the error "Invalid binding `SESSION`" in your build output, you need to add the binding to your wrangler config file.
+17:35:46 [WARN] [@astrojs/cloudflare] [@astrojs/cloudflare] This adapter is intended to be used with server rendered pages, which this project does not contain any of. As such, this adapter is unnecessary.
+17:35:46 [WARN] [adapter] Cloudflare does not support sharp at runtime. However, you can configure `imageService: "compile"` to optimize images with sharp on prerendered pages during build time.
+17:35:46 [content] Syncing content
+17:35:46 [content] Synced content
+17:35:46 [types] Generated 38ms
+17:35:46 [build] output: "static"
+17:35:46 [build] mode: "server"
+17:35:46 [build] directory: /media/oem/MyFiles/8_DEVELOPMENT/Focalis-Stratega-Group/dist/
+17:35:46 [build] adapter: @astrojs/cloudflare
+17:35:46 [build] Collecting build info...
+17:35:46 [build] ✓ Completed in 63ms.
+17:35:46 [build] Building server entrypoints...
+17:35:48 [vite] ✓ built in 2.57s
+17:35:48 [build] ✓ Completed in 2.60s.
+
+ building client (vite) 
+17:35:48 [vite] transforming...
+17:35:49 [vite] ✓ 16 modules transformed.
+17:35:49 [ERROR] [vite] ✗ Build failed in 204ms
+[vite]: Rollup failed to resolve import "recharts" from "/media/oem/MyFiles/8_DEVELOPMENT/Focalis-Stratega-Group/src/components/SustainabilityWidget/ImpactoVerdeComponent.jsx".
+This is most likely unintended because it can break your application at runtime.
+If you do want to externalize this module explicitly add it to
+`build.rollupOptions.external`
+  Stack trace:
+    at viteLog (file:///media/oem/MyFiles/8_DEVELOPMENT/Focalis-Stratega-Group/node_modules/.pnpm/vite@6.3.5_@types+node@24.3.0_jiti@2.5.1_lightningcss@1.30.1/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:46345:15)
+    at onwarn (file:///media/oem/MyFiles/8_DEVELOPMENT/Focalis-Stratega-Group/node_modules/.pnpm/@vitejs+plugin-react@4.7.0_vite@6.3.5_@types+node@24.3.0_jiti@2.5.1_lightningcss@1.30.1_/node_modules/@vitejs/plugin-react/dist/index.js:90:7)
+    at onRollupLog (file:///media/oem/MyFiles/8_DEVELOPMENT/Focalis-Stratega-Group/node_modules/.pnpm/vite@6.3.5_@types+node@24.3.0_jiti@2.5.1_lightningcss@1.30.1/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:46393:5)
+    at file:///media/oem/MyFiles/8_DEVELOPMENT/Focalis-Stratega-Group/node_modules/.pnpm/rollup@4.46.3/node_modules/rollup/dist/es/shared/node-entry.js:20861:32
+    at ModuleLoader.handleInvalidResolvedId (file:///media/oem/MyFiles/8_DEVELOPMENT/Focalis-Stratega-Group/node_modules/.pnpm/rollup@4.46.3/node_modules/rollup/dist/es/shared/node-entry.js:21487:26)
