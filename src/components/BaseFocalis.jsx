@@ -43,11 +43,11 @@ const PageFrame = ({
   <div className="relative w-full min-h-[500px] lg:pb-[141.4%] lg:min-h-0">
     <div
       className={`lg:absolute lg:inset-0 overflow-hidden rounded-2xl shadow-xl ${
-        bleed ? "" : "p-4"
+        bleed ? "" : "p-1 sm:p-4"
       }`}
     >
       <div
-        className={`lg:absolute lg:inset-0 rounded-[1.25rem] ${bleed ? "" : "p-6"}`}
+        className={`lg:absolute lg:inset-0 rounded-[1.25rem] ${bleed ? "" : "p-2 sm:p-6"}`}
       >
         <div
           className={`absolute inset-0 rounded-[1.25rem] bg-gradient-to-br ${bg}`}
@@ -91,7 +91,7 @@ const PageFrame = ({
             fill="none"
           />
         </svg>
-        <div className="relative p-8 flex flex-col text-white min-h-[468px] lg:absolute lg:inset-0 lg:overflow-y-auto">
+        <div className="relative p-4 sm:p-8 flex flex-col text-white min-h-[468px] lg:absolute lg:inset-0 lg:overflow-y-auto">
           {children}
         </div>
       </div>
