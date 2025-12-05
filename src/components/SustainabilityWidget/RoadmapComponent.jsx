@@ -59,7 +59,7 @@ const RoadmapComponent = ({ phases }) => {
                   }`}
                   onClick={() => setSelectedPhase(isSelected ? null : phase.id)}
                 >
-                  <div className="flex items-center justify-between mb-2">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-2 gap-2">
                     <div className="flex items-center gap-3">
                       <div className={`p-2 rounded-lg ${
                         phase.status === 'completed' ? 'bg-emerald-100' :
@@ -77,9 +77,9 @@ const RoadmapComponent = ({ phases }) => {
                       </div>
                     </div>
                     
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 ml-11 sm:ml-0">
                       {getStatusIcon(phase.status)}
-                      <span className={`text-xs px-2 py-1 rounded-full font-medium ${
+                      <span className={`text-xs px-2 py-1 rounded-full font-medium whitespace-nowrap ${
                         phase.status === 'completed' ? 'bg-emerald-100 text-emerald-700' :
                         phase.status === 'in-progress' ? 'bg-amber-100 text-amber-700' : 
                         'bg-gray-100 text-gray-600'

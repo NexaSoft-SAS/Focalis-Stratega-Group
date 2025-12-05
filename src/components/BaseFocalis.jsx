@@ -40,14 +40,14 @@ const PageFrame = ({
   bg = "from-[#0f2e5f] to-[#2aa9e0]",
   bleed = false,
 }) => (
-  <div className="relative w-full" style={{ paddingBottom: "141.4%" }}>
+  <div className="relative w-full min-h-[500px] lg:pb-[141.4%] lg:min-h-0">
     <div
-      className={`absolute inset-0 overflow-hidden rounded-2xl shadow-xl ${
+      className={`lg:absolute lg:inset-0 overflow-hidden rounded-2xl shadow-xl ${
         bleed ? "" : "p-4"
       }`}
     >
       <div
-        className={`absolute inset-0 rounded-[1.25rem] ${bleed ? "" : "p-6"}`}
+        className={`lg:absolute lg:inset-0 rounded-[1.25rem] ${bleed ? "" : "p-6"}`}
       >
         <div
           className={`absolute inset-0 rounded-[1.25rem] bg-gradient-to-br ${bg}`}
@@ -91,7 +91,7 @@ const PageFrame = ({
             fill="none"
           />
         </svg>
-        <div className="absolute inset-0 p-8 flex flex-col text-white overflow-y-scroll">
+        <div className="relative p-8 flex flex-col text-white min-h-[468px] lg:absolute lg:inset-0 lg:overflow-y-auto">
           {children}
         </div>
       </div>
