@@ -104,9 +104,9 @@ const RoadmapComponent = ({ phases }) => {
               </div>
             );
           })}
-        </div>
-        
-        {/* Progress indicator */}
+        </div>               
+      </div>
+      {/* Progress indicator */}
         <div className="mt-6 p-4 bg-gradient-to-r from-emerald-50 to-green-50 rounded-xl border border-emerald-100">
           <div className="flex items-center justify-between mb-2">
             <span className="text-sm font-medium text-gray-700">Progreso General</span>
@@ -116,7 +116,6 @@ const RoadmapComponent = ({ phases }) => {
             <div className="bg-emerald-500 h-2 rounded-full transition-all duration-500" style={{ width: '50%' }}></div>
           </div>
         </div>
-      </div>
     </div>
   );
 };
