@@ -8,41 +8,41 @@ Estrategia, IA y sostenibilidad para convertir proyectos en resultados verificab
 
 > https://focalis-stratega-group.pages.dev/ 
 
-## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🌱 Sustainability Widget - Diagnostico Verde Platform
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+### API Endpoints
+
+#### Public Endpoints
+```
+POST /api/diagnostico/          # Submit diagnosis request
+GET  /api/                      # Health check
+GET  /api/health               # Detailed health check
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+#### Admin Endpoints (JWT Required)
+```
+POST /api/auth/login           # Admin authentication
+GET  /api/diagnostico/         # List all requests
+GET  /api/diagnostico/{id}     # Get specific request  
+PUT  /api/diagnostico/{id}     # Update request
+DELETE /api/diagnostico/{id}   # Delete request
+GET  /api/diagnostico/analytics/dashboard # Analytics data
+```
 
-## 🧞 Commands
+## 📈 Data Models
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### DiagnosticoVerde
+```json
+{
+  "empresa": "Company Name",
+  "contacto_nombre": "Contact Person", 
+  "contacto_email": "email@company.com",
+  "telefono": "+34 600 123 456",
+  "mensaje": "Additional details",
+  "sector": "Industry sector",
+  "fuente_trafico": "web|linkedin|email|referencia|directo",
+  "estado": "pendiente|en_proceso|completado|cancelado",
+  "fecha_solicitud": "2024-01-15T10:30:00Z"
+}
+```

@@ -42,8 +42,8 @@ const CTAComponent = ({ onFormSubmit }) => {
         fuente_trafico: 'web'
       };
 
-      // Get backend URL from environment
-      const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+      // Get backend URL from environment (Vite uses import.meta.env)
+      const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8001';
       
       // Send to backend API
       const response = await fetch(`${BACKEND_URL}/api/diagnostico/`, {
