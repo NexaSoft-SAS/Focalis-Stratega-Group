@@ -43,7 +43,7 @@ const CTAComponent = ({ onFormSubmit }) => {
       };
 
       // Get backend URL from environment (Vite uses import.meta.env)
-      const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8001';
+      const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
       
       // Send to backend API
       const response = await fetch(`${BACKEND_URL}/api/diagnostico/`, {
@@ -221,7 +221,7 @@ const CTAComponent = ({ onFormSubmit }) => {
                 name="phone"
                 value={formData.phone}
                 onChange={handleInputChange}
-                placeholder="+34 600 000 000"
+                placeholder="+57 300 000 000"
                 className="w-full"
               />
             </div>

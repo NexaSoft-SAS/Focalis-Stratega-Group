@@ -38,7 +38,7 @@ GET  /api/diagnostico/analytics/dashboard # Analytics data
   "empresa": "Company Name",
   "contacto_nombre": "Contact Person", 
   "contacto_email": "email@company.com",
-  "telefono": "+34 600 123 456",
+  "telefono": "+57 300 123 456",
   "mensaje": "Additional details",
   "sector": "Industry sector",
   "fuente_trafico": "web|linkedin|email|referencia|directo",
