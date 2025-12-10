@@ -1,0 +1,21 @@
+---
+import "../styles/global.css";
+import Layout from "../layouts/Layout.astro";
+import RenewableEnergiesComponent from "@/components/RenewableEnergies/RenewableEnergiesComponent";
+
+const handleFormSubmit = (formData: any) => {
+    console.log("RenewableEnergies form submitted:", formData);
+};
+---
+
+<Layout title="Proyectos con Energías Renovables">
+    <div
+        class="min-h-screen bg-gradient-to-br from-gray-50 via-green-50 to-emerald-50 py-8 px-4"
+    >
+        <RenewableEnergiesComponent
+            client:only="react"
+            title="Proyectos con Energías Renovables"
+            subtitle="Proyectos con Energías Renovables"
+        />
+    </div>
+</Layout>
