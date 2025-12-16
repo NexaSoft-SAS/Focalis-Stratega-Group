@@ -1,0 +1,32 @@
+---
+import "@/styles/global.css";
+import Layout from "@/layouts/Layout.astro";
+import AI from "@/components/AI/AIComponent";
+
+const handleFormSubmit = (formData: any) => {
+    console.log("AI form submitted:", formData);
+};
+---
+
+<Layout title="Proyectos con IA">
+    <div
+        class="min-h-screen bg-gradient-to-br from-gray-50 via-green-50 to-emerald-50 py-8 px-4"
+    >
+        <AI
+            client:only="react"
+            title="¡Tu Negocio en Piloto Automático! Cuatro Claves para Escalar con IA Hoy Mismo"
+            subtitle="Deja de perder tiempo en tareas repetitivas: integra la Inteligencia Artificial para optimizar procesos, reducir costes y multiplicar tu productividad sin importar el tamaño de tu empresa."
+            description="La Inteligencia Artificial genera soluciones prácticas accesibles para negocios de cualquier escala, transformando áreas críticas de tu operación. Te ayudamos a implementar chatbots para atención al cliente 24/7, automatizar el tedioso procesamiento de documentos, acelerar la generación de contenidos de marketing y utilizar el análisis de datos avanzado para tomar decisiones estratégicas e informadas."
+        />
+    </div>
+</Layout>
+
+<style>
+    #pizarraAI {
+        transition: transform 0.3s ease;
+    }
+
+    #pizarraAI:hover {
+        transform: scale(1.1);
+    }
+</style>

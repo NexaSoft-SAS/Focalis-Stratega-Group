@@ -1,6 +1,6 @@
 ---
-import "../styles/global.css";
-import Layout from "../layouts/Layout.astro";
+import "@/styles/global.css";
+import Layout from "@/layouts/Layout.astro";
 import RenewableEnergiesComponent from "@/components/RenewableEnergies/RenewableEnergiesComponent";
 
 const handleFormSubmit = (formData: any) => {
@@ -15,7 +15,7 @@ const handleFormSubmit = (formData: any) => {
         <RenewableEnergiesComponent
             client:only="react"
             title="Proyectos con Energías Renovables"
-            subtitle="Proyectos con Energías Renovables"
+            subtitle="Adquiere tecnologías solares y eolicas para impulsar con sostenibilidad tu negocio."
         />
     </div>
 </Layout>
