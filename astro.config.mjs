@@ -9,5 +9,9 @@ import cloudflare from "@astrojs/cloudflare";
 export default defineConfig({
   integrations: [react()],
   adapter: cloudflare(),
-  vite: { plugins: [tailwindcss()] },
+  vite: { 
+    plugins: [tailwindcss()], 
+    optimizeDeps: { include: ["react", "react-dom"] }, 
+    ssr: { noExternal: [""] } 
+  },
 });
