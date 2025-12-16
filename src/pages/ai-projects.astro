@@ -1,7 +1,7 @@
 ---
 import "@/styles/global.css";
 import Layout from "@/layouts/Layout.astro";
-import AI from "@/components/AI/AIComponent";
+import AI from "@/components/AIProjects/AIComponent";
 
 const handleFormSubmit = (formData: any) => {
     console.log("AI form submitted:", formData);
@@ -17,6 +17,7 @@ const handleFormSubmit = (formData: any) => {
             title="¡Tu Negocio en Piloto Automático! Cuatro Claves para Escalar con IA Hoy Mismo"
             subtitle="Deja de perder tiempo en tareas repetitivas: integra la Inteligencia Artificial para optimizar procesos, reducir costes y multiplicar tu productividad sin importar el tamaño de tu empresa."
             description="La Inteligencia Artificial genera soluciones prácticas accesibles para negocios de cualquier escala, transformando áreas críticas de tu operación. Te ayudamos a implementar chatbots para atención al cliente 24/7, automatizar el tedioso procesamiento de documentos, acelerar la generación de contenidos de marketing y utilizar el análisis de datos avanzado para tomar decisiones estratégicas e informadas."
+            onFormSubmit={handleFormSubmit}
         />
     </div>
 </Layout>

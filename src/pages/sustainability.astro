@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
 import Layout from "../layouts/Layout.astro";
-import SustainabilityWidget from "../components/SustainabilityWidget/SustainabilityWidget";
+import SustainabilityWidget from "@/components/SustainabilityWidget/SustainabilityWidget";
 
 const handleFormSubmit = (formData: any) => {
     console.log("Sustainability form submitted:", formData);
@@ -16,6 +16,7 @@ const handleFormSubmit = (formData: any) => {
             client:only="react"
             title="Dashboard de Sostenibilidad Empresarial"
             subtitle="Transforme su estrategia empresarial con soluciones sostenibles que generan valor medible. Reduzca costos, mejore su reputación y cumpla objetivos ESG."
+            onFormSubmit={handleFormSubmit}
         />
     </div>
 </Layout>

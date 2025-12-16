@@ -161,22 +161,8 @@ export default function BrochureFocalis() {
                     <div className="mt-1 text-[0.8rem] opacity-80 text-nowrap">
                       Estrategas de proyectos
                     </div>
-                  </div>
-                  <div className="flex gap-2 md:flex-row flex-col p-4">
-                    <Badge>Energía y Agua</Badge>
-                    <Badge>Transformación Digital</Badge>
-                    <Badge>Desarrollo Sostenible</Badge>
-                  </div>
-                </div>
-                <div className="mt-auto">
-                  <h2 className="text-4xl lg:text-5xl font-extrabold leading-tight">
-                    FOCALIS STRATEGA GROUP
-                  </h2>
-                  <p className="mt-4 max-w-2xl text-white/90 text-lg">
-                    Estrategia, gerencia integral e IA para convertir proyectos
-                    en resultados verificables y valor empresarial.
-                  </p>
-                  <a 
+                    <div className="mt-6 flex flex-wrap gap-3 md:flex-row flex-col p-4 text-lg">
+                    <a 
                     href="/sustainability"
                     className="mt-6 inline-flex items-center gap-2 px-6 py-3 bg-white/15 hover:bg-white/25 backdrop-blur-sm border border-white/30 hover:border-white/50 rounded-xl text-white font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-white/10 group"
                   >
@@ -206,6 +192,23 @@ export default function BrochureFocalis() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
                   </a>
+                  </div>
+                  </div>
+                </div>
+                <div className="mt-auto">
+                  <h2 className="text-4xl lg:text-5xl font-extrabold leading-tight">
+                    FOCALIS GROUP
+                  </h2>
+                  <p className="mt-4 max-w-2xl text-white/90 text-lg">
+                    Estrategia, gerencia integral e IA para convertir proyectos
+                    en resultados verificables y valor empresarial.
+                  </p>
+                  <div className="mt-4 flex flex-wrap items-center gap-3">
+                      <SmallStat label="Estándares" value="ISO/IEC · PMI" />
+                      <SmallStat label="Enfoque" value="ROI + Cumplimiento" />
+                      <SmallStat label="Trazabilidad" value="100%" />
+                    </div>
+                  
                   {/* <a 
                     href="/renewable-energies"
                     className="mt-6 inline-flex items-center gap-2 px-6 py-3 bg-white/15 hover:bg-white/25 backdrop-blur-sm border border-white/30 hover:border-white/50 rounded-xl text-white font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-white/10 group"
@@ -221,11 +224,7 @@ export default function BrochureFocalis() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
                   </a> */}
-                  <div className="mt-6 flex flex-wrap items-center gap-3">
-                    <SmallStat label="Estándares" value="ISO/IEC · PMI" />
-                    <SmallStat label="Enfoque" value="ROI + Cumplimiento" />
-                    <SmallStat label="Trazabilidad" value="100%" />
-                  </div>
+                  
                 </div>
               </PageFrame>
             </motion.div>
@@ -448,6 +447,11 @@ export default function BrochureFocalis() {
             >
               <PageFrame>
                 <div className="flex flex-col h-full">
+                  <div className="flex flex-wrap gap-3 md:flex-row flex-col p-4 text-lg">
+                    <Badge>Energía y Agua</Badge>
+                    <Badge>Transformación Digital</Badge>
+                    <Badge>Desarrollo Sostenible</Badge>
+                  </div>
                   <div className="grid sm:grid-cols-2 gap-4 mt-auto grid-rows-1">
                     <div className="bg-white/10 rounded-xl p-4 border border-white/15">
                       <h4 className="font-semibold mb-2">Contacto</h4>

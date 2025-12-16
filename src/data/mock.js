@@ -15,8 +15,8 @@ export const sustainabilityData = {
   // Key sustainability metrics
   impactMetrics: {
     energySaved: {
-      value: 1.2,
-      unit: 'GWh',
+      value: 102,
+      unit: 'KWh',
       trend: '+18%',
       icon: 'Zap'
     },
@@ -27,8 +27,8 @@ export const sustainabilityData = {
       icon: 'Droplets'
     },
     economicBenefit: {
-      value: 320000,
-      unit: '€',
+      value: 30200000,
+      unit: 'COP $',
       trend: '+31%',
       icon: 'TrendingUp'
     },

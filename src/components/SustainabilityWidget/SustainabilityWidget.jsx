@@ -1,12 +1,12 @@
 import React from 'react';
-import HeaderComponent from './HeaderComponent';
-import ImpactoVerdeComponent from './ImpactoVerdeComponent';
-import RoadmapComponent from './RoadmapComponent';
-import BenchmarkComponent from './BenchmarkComponent';
-import CTAComponent from './CTAComponent';
-import { sustainabilityData } from '../../data/mock';
-import { Toaster } from '../ui/toaster';
-
+import HeaderComponent from '@/components/SustainabilityWidget/HeaderComponent';
+import ImpactoVerdeComponent from '@/components/SustainabilityWidget/ImpactoVerdeComponent';
+import RoadmapComponent from '@/components/SustainabilityWidget/RoadmapComponent';
+import BenchmarkComponent from '@/components/SustainabilityWidget/BenchmarkComponent';
+import CTAComponent from '@/components/SustainabilityWidget/CTAComponent';
+import { sustainabilityData } from '@/data/mock';
+import { Toaster } from '@/components/ui/toaster';
+ 
 const SustainabilityWidget = ({ 
   title, 
   subtitle, 
@@ -15,7 +15,7 @@ const SustainabilityWidget = ({
   className = "" 
 }) => {
   const handleFormSubmit = (formData) => {
-    console.log('Form submitted:', formData);
+    console.log('Form Sustainability submitted:', formData);
     if (onFormSubmit) {
       onFormSubmit(formData);
     }
@@ -33,7 +33,7 @@ const SustainabilityWidget = ({
           <BenchmarkComponent benchmarkData={data.benchmarkData} />
         </div>
         
-        <CTAComponent onFormSubmit={handleFormSubmit} />
+        <CTAComponent onFormSubmit={handleFormSubmit} /> 
       </div>
       
       <Toaster />

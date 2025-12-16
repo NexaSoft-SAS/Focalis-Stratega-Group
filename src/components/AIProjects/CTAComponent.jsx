@@ -46,6 +46,7 @@ const CTAComponent = ({ onFormSubmit }) => {
       const BACKEND_URL = import.meta.env.PUBLIC_BACKEND_URL;
       
       // Send to backend API
+      // TODO: update api url to /api/ai_projects/ to handle ai projects data
       const response = await fetch(`${BACKEND_URL}/api/diagnostico/`, {
         method: 'POST',
         headers: {
@@ -111,9 +112,9 @@ const CTAComponent = ({ onFormSubmit }) => {
             <Rocket className="w-8 h-8 text-white" />
           </div>
           
-          <h2 className="text-2xl font-bold mb-4">¿Listo para el cambio sostenible?</h2>
+          <h2 className="text-2xl font-bold mb-4">¿Listo para optimizar tareas con Inteligencia Artificial?</h2>
           <p className="text-emerald-100 mb-8 max-w-md mx-auto">
-            Obtén un diagnóstico personalizado de tu huella de carbono y descubre cómo reducir costos mientras mejoras tu impacto ambiental.
+            Descubre cómo la IA puede transformar la productividad de los procesos y optimizar tareas diarias.
           </p>
           
           <Button 
@@ -121,7 +122,7 @@ const CTAComponent = ({ onFormSubmit }) => {
             className="bg-white text-emerald-600 hover:bg-emerald-50 font-semibold px-6 sm:px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-sm sm:text-base"
           >
             <Rocket className="w-5 h-5 mr-2" />
-            Solicitar Diagnóstico Verde
+            Empezar un proyecto con IA
           </Button>
           
           <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 text-sm text-emerald-100">
@@ -154,12 +155,12 @@ const CTAComponent = ({ onFormSubmit }) => {
           )}
         </div>
         <h3 className="text-xl font-semibold text-gray-900 mb-2">
-          {isSubmitted ? "¡Solicitud Enviada!" : "Solicitar Diagnóstico Verde"}
+          {isSubmitted ? "¡Solicitud Enviada!" : "Empezar un proyecto con IA"}
         </h3>
         <p className="text-gray-600 text-sm">
           {isSubmitted 
             ? "Nos pondremos en contacto contigo pronto" 
-            : "Completa el formulario para recibir tu análisis personalizado"
+            : "Completa el formulario para recibir un asesoramiento personalizado"
           }
         </p>
       </div>
@@ -235,7 +236,7 @@ const CTAComponent = ({ onFormSubmit }) => {
               name="message"
               value={formData.message}
               onChange={handleInputChange}
-              placeholder="Cuéntanos sobre tus objetivos de sostenibilidad..."
+              placeholder="Cuéntanos sobre tus solicitudes aplicando Inteligencia Artificial..."
               rows={3}
               className="w-full"
             />
