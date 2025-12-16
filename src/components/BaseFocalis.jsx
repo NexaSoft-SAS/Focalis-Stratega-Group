@@ -192,7 +192,7 @@ export default function BrochureFocalis() {
                     </svg>
                   </a>
                   <a 
-                    href="/ai"
+                    href="/ai-projects"
                     className="mt-6 inline-flex items-center gap-2 px-6 py-3 bg-white/15 hover:bg-white/25 backdrop-blur-sm border border-white/30 hover:border-white/50 rounded-xl text-white font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-white/10 group"
                   >
                     <span>🚀</span>
