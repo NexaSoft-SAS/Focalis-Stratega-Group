@@ -1,15 +1,46 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Rocket, Send, CheckCircle, Loader } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 
-const CTAComponent = ({ onFormSubmit }) => {
+// Context-aware messaging based on selected challenge
+const challengeMessages = {
+  costs: {
+    headline: '¿Listo para reducir costos con IA?',
+    description: 'Te ayudamos a identificar y automatizar procesos para optimizar tu presupuesto.',
+    placeholder: 'Cuéntanos sobre los procesos que más costos generan en tu operación...'
+  },
+  speed: {
+    headline: '¿Quieres acelerar tus procesos?',
+    description: 'Descubre cómo la IA puede reducir tiempos de respuesta y procesamiento.',
+    placeholder: 'Cuéntanos qué procesos te gustaría agilizar...'
+  },
+  decisions: {
+    headline: '¿Necesitas tomar mejores decisiones?',
+    description: 'Transforma tus datos en insights accionables con análisis inteligente.',
+    placeholder: 'Cuéntanos qué tipo de decisiones quieres mejorar con datos...'
+  },
+  automation: {
+    headline: '¿Listo para automatizar tareas repetitivas?',
+    description: 'Libera tiempo de tu equipo eliminando trabajo manual innecesario.',
+    placeholder: 'Cuéntanos qué tareas repetitivas consumen más tiempo en tu empresa...'
+  },
+  default: {
+    headline: '¿Listo para optimizar con Inteligencia Artificial?',
+    description: 'Descubre cómo la IA puede transformar la productividad de tu negocio.',
+    placeholder: 'Cuéntanos sobre tus solicitudes aplicando Inteligencia Artificial...'
+  }
+};
+
+const CTAComponent = ({ onFormSubmit, selectedChallenge }) => {
   const [isFormOpen, setIsFormOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { toast } = useToast();
+  
+  const messages = challengeMessages[selectedChallenge] || challengeMessages.default;
 
   const [formData, setFormData] = useState({
     name: '',
@@ -38,8 +69,8 @@ const CTAComponent = ({ onFormSubmit }) => {
         contacto_email: formData.email,
         telefono: formData.phone || null,
         mensaje: formData.message || null,
-        sector: null, // Can be extended later
-        fuente_trafico: 'web'
+        sector: selectedChallenge || null, // Records user's selected priority
+        fuente_trafico: 'web-ai-projects'
       };
 
       // Get backend URL from environment (Vite uses import.meta.env)
@@ -112,9 +143,9 @@ const CTAComponent = ({ onFormSubmit }) => {
             <Rocket className="w-8 h-8 text-white" />
           </div>
           
-          <h2 className="text-2xl font-bold mb-4">¿Listo para optimizar tareas con Inteligencia Artificial?</h2>
+          <h2 className="text-2xl font-bold mb-4">{messages.headline}</h2>
           <p className="text-emerald-100 mb-8 max-w-md mx-auto">
-            Descubre cómo la IA puede transformar la productividad de los procesos y optimizar tareas diarias.
+            {messages.description}
           </p>
           
           <Button 
@@ -236,7 +267,7 @@ const CTAComponent = ({ onFormSubmit }) => {
               name="message"
               value={formData.message}
               onChange={handleInputChange}
-              placeholder="Cuéntanos sobre tus solicitudes aplicando Inteligencia Artificial..."
+              placeholder={messages.placeholder}
               rows={3}
               className="w-full"
             />

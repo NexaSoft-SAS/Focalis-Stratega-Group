@@ -1,4 +1,3 @@
-// Brand tokens and theme configuration for Focalis brochure
 export const brand = {
   primary: "#0f2e5f",    // Navy focalis
   primary2: "#153d7a",
