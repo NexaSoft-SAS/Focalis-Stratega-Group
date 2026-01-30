@@ -117,8 +117,8 @@ export const coverStats = [
 export const contactInfo = {
   company: "FOCALIS STRATEGA GROUP",
   email: "focalisstrategagroup@gmail.com",
-  phone: "+57 319 624 6805",
-  whatsapp: "573196138057",
+  phone: "+57 320 484 2897",
+  whatsapp: "573204842897",
   location: "Bogotá, Colombia",
 };
 
