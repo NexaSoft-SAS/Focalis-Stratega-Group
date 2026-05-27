@@ -8,6 +8,34 @@ Estrategia, IA y sostenibilidad para convertir proyectos en resultados verificab
 
 > https://focalis-stratega-group.pages.dev/ 
 
+## Tech Stack
+
+| Layer | Technology | Version |
+|-------|-----------|---------|
+| Framework | Astro | 6.3.8 |
+| UI Library | React | 19.x |
+| Styling | Tailwind CSS | 4.x |
+| Adapter | @astrojs/cloudflare | 13.x |
+| Bundler | Vite | 7.x |
+| Parser | oxc-parser | 0.133.x |
+| Package Manager | pnpm | 10.x |
+
+## Getting Started
+
+```bash
+pnpm install     # Install dependencies
+pnpm dev         # Start dev server
+pnpm build       # Production build
+```
+
+## Routes
+
+| Route | Description |
+|-------|-------------|
+| `/` | Homepage — company brochure |
+| `/ai-projects` | AI Projects dashboard with lead capture form |
+| `/renewable-energies` | Renewable energies showcase |
+| `/sustainability` | Sustainability widget with lead capture form |
 
 ## 🌱 Sustainability Widget - Diagnostico Verde Platform
 
