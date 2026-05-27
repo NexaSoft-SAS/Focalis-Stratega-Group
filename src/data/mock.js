@@ -16,7 +16,7 @@ export const sustainabilityData = {
   impactMetrics: {
     energySaved: {
       value: 102,
-      unit: 'KWh',
+      unit: 'MWh',
       trend: '+18%',
       icon: 'Zap'
     },
@@ -27,7 +27,7 @@ export const sustainabilityData = {
       icon: 'Droplets'
     },
     economicBenefit: {
-      value: 30200000,
+      value: 302000000,
       unit: 'COP $',
       trend: '+31%',
       icon: 'TrendingUp'
@@ -45,7 +45,7 @@ export const sustainabilityData = {
     {
       id: 1,
       name: 'Diagnóstico',
-      description: 'Análisis completo de huella de carbono actual',
+      description: 'Diagnóstico de huella de carbono y consumos hídrico/energético',
       status: 'completed',
       duration: '2-4 semanas',
       icon: 'Search',
@@ -54,7 +54,7 @@ export const sustainabilityData = {
     {
       id: 2,
       name: 'Implementación',
-      description: 'Despliegue de soluciones sostenibles priorizadas',
+      description: 'Adaptación de energías renovables e infraestructura de tratamiento',
       status: 'in-progress',
       duration: '3-6 meses',
       icon: 'Settings',
@@ -63,7 +63,7 @@ export const sustainabilityData = {
     {
       id: 3,
       name: 'Resultados',
-      description: 'Medición y validación de impacto conseguido',
+      description: 'Validación del impacto ecológico y medición de ahorros en tiempo real',
       status: 'pending',
       duration: '1-2 meses',
       icon: 'BarChart3',
@@ -72,7 +72,7 @@ export const sustainabilityData = {
     {
       id: 4,
       name: 'Escalabilidad',
-      description: 'Expansión a otras áreas y optimización continua',
+      description: 'Optimización continua mediante algoritmos de inteligencia artificial',
       status: 'pending',
       duration: 'Continuo',
       icon: 'Rocket',

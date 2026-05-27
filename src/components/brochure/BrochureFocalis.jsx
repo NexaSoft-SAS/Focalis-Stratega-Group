@@ -131,7 +131,6 @@ export default function BrochureFocalis() {
                     {servicesPartTwo.map((service, i) => (
                       <ServiceCard key={i} {...service} />
                     ))}
-                    <MethodologyCard points={methodologyPoints} />
                   </div>
                   <div className="mt-auto flex items-center justify-between pt-4">
                     <div className="text-xs text-slate-500">
@@ -146,24 +145,28 @@ export default function BrochureFocalis() {
             {/* BACK PAGE - Contact */}
             <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }}>
               <PageFrame>
-                <div className="flex flex-col h-full">
-                  <div className="flex flex-wrap gap-3 md:flex-row flex-col p-4 text-lg">
+                <div className="flex flex-col h-full gap-4">
+                  <div className="flex flex-wrap gap-2">
                     {badgesBack.map((badge, i) => (
                       <Badge key={i}>{badge}</Badge>
                     ))}
                   </div>
-                  <div className="grid sm:grid-cols-2 gap-4 mt-auto grid-rows-1">
+                  
+                  {/* Methodology & Differentials */}
+                  <MethodologyCard points={methodologyPoints} dark />
+                  
+                  <div className="grid sm:grid-cols-2 gap-4 mt-auto">
                     <ContactCard contact={contactInfo} />
                     <QRCodeCard />
                   </div>
-                  <div className="mt-6 text-sm opacity-90">
+                  <div className="mt-2 text-sm opacity-90">
                     <div className="font-semibold">Nuestro compromiso</div>
-                    <p className="max-w-xl">
+                    <p className="max-w-xl text-xs">
                       Convertir decisiones en resultados verificables y sostenibles con dirección 
                       técnica impecable, innovación aplicada y trazabilidad total.
                     </p>
                   </div>
-                  <div className="mt-4 text-[10px] opacity-70">
+                  <div className="mt-2 text-[10px] opacity-70">
                     © {new Date().getFullYear()} Focalis Stratega Group. Todos los derechos reservados.
                   </div>
                 </div>

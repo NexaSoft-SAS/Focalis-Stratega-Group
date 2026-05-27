@@ -1,154 +1,156 @@
 import { 
-  MessageCircle, 
-  FileText, 
-  PenTool, 
-  BarChart3,
-  DollarSign,
+  Droplets,
   Zap,
+  Leaf,
+  Activity,
+  DollarSign,
   Brain,
   RefreshCcw
 } from 'lucide-react';
 
 /**
- * AI Solutions Data - Editable KPIs and business content
- * Update these values to reflect actual business metrics
+ * AI Solutions Data - Engineering and Sustainability Focus
+ * Metrics and copy represent real industrial scenarios
  */
 
-// Business challenges/priorities users can select
+// Engineering challenges/priorities users can select
 export const challenges = [
   {
     id: 'costs',
-    label: 'Reducir Costos',
+    label: 'Optimizar Operaciones',
     icon: DollarSign,
     color: 'emerald',
-    description: 'Optimiza gastos operativos con automatización inteligente'
+    description: 'Minimice desvíos presupuestarios y optimice el uso de recursos técnicos.'
   },
   {
     id: 'speed',
-    label: 'Aumentar Velocidad',
+    label: 'Acelerar Ejecución',
     icon: Zap,
     color: 'amber',
-    description: 'Acelera procesos y reduce tiempos de respuesta'
+    description: 'Reduzca plazos de diseño, cálculo e interventoría con automatización.'
   },
   {
     id: 'decisions',
-    label: 'Mejores Decisiones',
+    label: 'Predecir Riesgos',
     icon: Brain,
     color: 'blue',
-    description: 'Toma decisiones basadas en datos y predicciones'
+    description: 'Anticipe fallas mecánicas, estructurales o variaciones críticas de flujo.'
   },
   {
     id: 'automation',
-    label: 'Automatizar Tareas',
+    label: 'Automatizar Procesos',
     icon: RefreshCcw,
     color: 'violet',
-    description: 'Libera tiempo eliminando tareas repetitivas'
+    description: 'Libera tiempo técnico eliminando tareas manuales de cálculo y reportes.'
   }
 ];
 
-// AI Solutions with their KPIs mapped to challenges
+// AI Solutions with their KPIs mapped to engineering challenges
 export const solutions = [
   {
-    id: 'chatbots',
-    icon: MessageCircle,
-    title: 'Chatbots Inteligentes 24/7',
-    subtitle: 'Atención al cliente automatizada',
-    description: 'Responde consultas, procesa pedidos y resuelve problemas sin intervención humana.',
+    id: 'water_ai',
+    icon: Droplets,
+    title: 'Optimización de Recursos Hídricos',
+    subtitle: 'Modelos predictivos para agua y saneamiento',
+    description: 'Control inteligente en plantas de tratamiento, redes de distribución y almacenamiento de agua con algoritmos de IA.',
     benefits: [
-      'Disponibilidad 24/7 sin costos adicionales',
-      'Respuestas instantáneas a consultas frecuentes',
-      'Escalamiento automático a agentes humanos',
-      'Integración con WhatsApp, web y redes sociales'
+      'Reducción de pérdidas físicas en el transporte de fluidos',
+      'Predicción precisa de demanda de agua y niveles de stock',
+      'Optimización del consumo energético en sistemas de bombeo',
+      'Monitoreo predictivo y autónomo de calidad de agua'
     ],
-    relatedChallenges: ['costs', 'speed', 'automation'],
-    implementationTime: '2-4 semanas',
-    kpis: {
-      costs: { value: '45%', label: 'Reducción en costos de soporte' },
-      speed: { value: '-85%', label: 'Tiempo de primera respuesta' },
-      automation: { value: '70%', label: 'Consultas resueltas automáticamente' }
-    }
-  },
-  {
-    id: 'documents',
-    icon: FileText,
-    title: 'Procesamiento de Documentos',
-    subtitle: 'Automatización de facturas y contratos',
-    description: 'Extrae datos de documentos, clasifica automáticamente y alimenta tus sistemas.',
-    benefits: [
-      'Lectura automática de facturas y recibos',
-      'Extracción de datos de contratos',
-      'Clasificación inteligente de documentos',
-      'Integración con ERPs y bases de datos'
-    ],
-    relatedChallenges: ['costs', 'speed', 'automation'],
+    relatedChallenges: ['costs', 'speed', 'decisions'],
     implementationTime: '3-6 semanas',
     kpis: {
-      costs: { value: '60%', label: 'Reducción en procesamiento manual' },
-      speed: { value: '15x', label: 'Más rápido que entrada manual' },
-      automation: { value: '90%', label: 'Precisión en extracción' }
+      costs: { value: '25%', label: 'Ahorro en energía de bombeo' },
+      speed: { value: '-40%', label: 'Tiempo en control de flujos' },
+      decisions: { value: '98%', label: 'Precisión en previsión de stock' }
     }
   },
   {
-    id: 'content',
-    icon: PenTool,
-    title: 'Generación de Contenidos',
-    subtitle: 'Marketing y comunicación con IA',
-    description: 'Crea textos, imágenes y campañas de marketing optimizadas automáticamente.',
+    id: 'energy_ai',
+    icon: Zap,
+    title: 'Eficiencia Energética y Redes Inteligentes',
+    subtitle: 'Predicción y adaptación de fuentes renovables',
+    description: 'Modelado predictivo de generación solar/eólica y gestión automatizada del almacenamiento de carga y microrredes.',
     benefits: [
-      'Redacción de emails y posts para redes',
-      'Generación de descripciones de productos',
-      'Personalización masiva de mensajes',
-      'Optimización SEO automática'
+      'Maximización del aprovechamiento de fuentes de energía renovable',
+      'Control predictivo inteligente para almacenamiento en baterías',
+      'Balanceo automático de carga y estabilidad de microrredes',
+      'Disminución del desvío de consumo versus generación'
     ],
-    relatedChallenges: ['speed', 'automation'],
-    implementationTime: '1-2 semanas',
-    kpis: {
-      speed: { value: '10x', label: 'Más contenido en menos tiempo' },
-      automation: { value: '80%', label: 'Reducción de tiempo de creación' }
-    }
-  },
-  {
-    id: 'analytics',
-    icon: BarChart3,
-    title: 'Análisis de Datos Avanzado',
-    subtitle: 'Inteligencia para decisiones estratégicas',
-    description: 'Convierte datos en insights accionables con predicciones y recomendaciones.',
-    benefits: [
-      'Dashboards ejecutivos automatizados',
-      'Predicción de ventas y demanda',
-      'Detección de anomalías y riesgos',
-      'Recomendaciones basadas en patrones'
-    ],
-    relatedChallenges: ['decisions', 'costs'],
+    relatedChallenges: ['costs', 'speed', 'decisions', 'automation'],
     implementationTime: '4-8 semanas',
     kpis: {
-      decisions: { value: '3x', label: 'Mejor precisión en predicciones' },
-      costs: { value: '25%', label: 'Optimización de inventario' }
+      costs: { value: '30%', label: 'Reducción de costos de red' },
+      speed: { value: '15x', label: 'Mayor velocidad de respuesta' },
+      decisions: { value: '+92%', label: 'Estabilidad de carga prevista' },
+      automation: { value: '95%', label: 'Autonomía de despacho' }
+    }
+  },
+  {
+    id: 'carbon_ai',
+    icon: Leaf,
+    title: 'Huella de Carbono y Monitoreo ESG',
+    subtitle: 'Medición automatizada y trazabilidad',
+    description: 'Cálculo dinámico y monitoreo continuo del impacto ecológico mediante sensores IoT e IA para el cumplimiento de objetivos ESG.',
+    benefits: [
+      'Cálculo automático de emisiones bajo estándares de protocolo',
+      'Conexión directa con sensores de campo (IoT) para datos reales',
+      'Generación inteligente de reportes y auditorías ecológicas',
+      'Roadmap predictivo para reducción de huella'
+    ],
+    relatedChallenges: ['costs', 'decisions', 'automation'],
+    implementationTime: '3-5 semanas',
+    kpis: {
+      costs: { value: '20%', label: 'Ahorro por impuestos de carbono' },
+      decisions: { value: '100%', label: 'Trazabilidad de datos de impacto' },
+      automation: { value: '90%', label: 'Menos esfuerzo en reportes' }
+    }
+  },
+  {
+    id: 'predictive_maintenance',
+    icon: Activity,
+    title: 'Gemelos Digitales y Mantenimiento de Activos',
+    subtitle: 'Predicción de fallas en infraestructura civil',
+    description: 'Algoritmos avanzados para predecir fallas estructurales o mecánicas y simular comportamiento de activos sin riesgos.',
+    benefits: [
+      'Identificación temprana de fatiga de materiales y fugas',
+      'Planificación optimizada de mantenimiento preventivo',
+      'Simulaciones avanzadas ante desastres o sobrecargas',
+      'Prolongación de la vida útil de presas, tuberías y plantas'
+    ],
+    relatedChallenges: ['costs', 'decisions', 'automation'],
+    implementationTime: '6-10 semanas',
+    kpis: {
+      costs: { value: '35%', label: 'Menos costos por fallas críticas' },
+      decisions: { value: '+95%', label: 'Precisión de alertas tempranas' },
+      automation: { value: '75%', label: 'Inspecciones digitalizadas' }
     }
   }
 ];
 
-// Global KPIs shown in the dashboard panel - EDIT THESE VALUES
+// Global KPIs shown in the dashboard panel
 export const globalKPIs = {
   costs: [
-    { label: 'Reducción de costos operativos', value: '30-60%', icon: '💰' },
-    { label: 'ROI promedio primer año', value: '250%', icon: '📈' },
-    { label: 'Ahorro en horas hombre/mes', value: '120+', icon: '⏱️' }
+    { label: 'Reducción en pérdidas de fluidos/energía', value: '15-30%', icon: '💧' },
+    { label: 'Ahorro en costos de mantenimiento', value: '25-40%', icon: '🛠️' },
+    { label: 'Retorno de Inversión (ROI) estimado', value: '<12 mes', icon: '📈' }
   ],
   speed: [
-    { label: 'Reducción tiempo de respuesta', value: '85%', icon: '⚡' },
-    { label: 'Procesos automatizados 24/7', value: '100%', icon: '🔄' },
-    { label: 'Tiempo de implementación', value: '2-8 sem', icon: '🚀' }
+    { label: 'Reducción de tiempos de diseño/cálculo', value: '60-80%', icon: '⚡' },
+    { label: 'Generación automatizada de reportes', value: '100%', icon: '📄' },
+    { label: 'Tiempo de respuesta ante alertas críticas', value: '<2 seg', icon: '⏱️' }
   ],
   decisions: [
-    { label: 'Precisión en predicciones', value: '+95%', icon: '🎯' },
-    { label: 'Visibilidad de datos', value: '360°', icon: '👁️' },
-    { label: 'Tiempo hasta insight', value: 'Minutos', icon: '💡' }
+    { label: 'Precisión en predicciones de fallas/flujo', value: '+95%', icon: '🎯' },
+    { label: 'Evitación de fallas operativas críticas', value: '90%', icon: '🛡️' },
+    { label: 'Visibilidad 360° de activos de campo', value: 'Real', icon: '👁️' }
   ],
   automation: [
-    { label: 'Tareas automatizables', value: '70%', icon: '🤖' },
-    { label: 'Reducción de errores', value: '90%', icon: '✅' },
-    { label: 'Escalabilidad sin costo', value: '∞', icon: '📊' }
+    { label: 'Monitoreo de impacto automatizable', value: '85%', icon: '🤖' },
+    { label: 'Reducción de errores de reporte técnico', value: '98%', icon: '✅' },
+    { label: 'Escalabilidad sin sensorización extra', value: 'Trazable', icon: '📊' }
   ]
 };
 
@@ -156,29 +158,29 @@ export const globalKPIs = {
 export const timelineSteps = [
   {
     step: 1,
-    title: 'Diagnóstico',
-    description: 'Análisis de procesos y oportunidades de IA',
-    duration: '1-2 días',
+    title: 'Diagnóstico Técnico',
+    description: 'Análisis de flujos de datos y oportunidades de optimización',
+    duration: '2-4 días',
     icon: '🔍'
   },
   {
     step: 2,
-    title: 'Diseño',
-    description: 'Propuesta técnica y roadmap de implementación',
-    duration: '3-5 días',
+    title: 'Modelado y Diseño',
+    description: 'Estructuración del gemelo digital y algoritmos de IA',
+    duration: '1-2 semanas',
     icon: '📐'
   },
   {
     step: 3,
-    title: 'Implementación',
-    description: 'Desarrollo, integración y pruebas',
-    duration: '2-8 semanas',
+    title: 'Implementación e Integración',
+    description: 'Despliegue de sensores IoT e integración con software técnico',
+    duration: '4-8 semanas',
     icon: '⚙️'
   },
   {
     step: 4,
-    title: 'Optimización',
-    description: 'Ajustes, entrenamiento y mejora continua',
+    title: 'Optimización Continua',
+    description: 'Reentrenamiento de modelos y validación del ROI operativo',
     duration: 'Continuo',
     icon: '📈'
   }
@@ -186,7 +188,7 @@ export const timelineSteps = [
 
 // Value proposition texts
 export const heroContent = {
-  title: 'Transforma tu Negocio con Inteligencia Artificial',
-  subtitle: 'Soluciones prácticas para automatizar, optimizar y escalar tu operación',
-  description: 'Identifica tu prioridad y descubre cómo la IA puede resolver tus desafíos específicos.'
+  title: 'Inteligencia Artificial Aplicada a Ingeniería',
+  subtitle: 'Soluciones de IA para optimizar la gestión de agua, transición energética y sostenibilidad',
+  description: 'Identifique su prioridad técnica y descubra cómo la IA optimiza procesos e impacto de forma medible.'
 };

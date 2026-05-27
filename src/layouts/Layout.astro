@@ -1,5 +1,9 @@
+---
+const { title = "Focalis Stratega Group", description = "Estrategia, IA y Sostenibilidad para convertir proyectos de ingeniería en resultados verificables y valor empresarial." } = Astro.props;
+---
+
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,18 +31,18 @@
 		<meta name="application-name" content="Focalis Stratega Group" />
 		<meta
 			name="description"
-			content="Estrategia, IA y sostenibilidad para convertir proyectos en resultados verificables y valor empresarial."
+			content={description}
 		/>
 		<meta
 			name="keywords"
-			content="PMO, Estrategia, Sostenibilidad, IA, Consultoría Estratégica, Proyectos Verdes, Gestión de Proyectos, Inteligencia Artificial, Gerencia Estrategica, Innovación Aplicada, Metodologías, Estándares Internacionales, ISO/IEC, PMI, Sostenibilidad Empresarial, Desarrollo Sostenible"
+			content="Ingeniería, Agua, Tratamiento de Agua, Energías Renovables, Sostenibilidad, IA, Consultoría de Ingeniería, Proyectos Verdes, Gestión de Proyectos, Inteligencia Artificial, Transición Energética, Huella de Carbono, ISO/IEC, PMI, Desarrollo Sostenible"
 		/>
 		<meta name="author" content="Focalis Stratega Group" />
 		<meta name="robots" content="index, follow" />
 		<meta name="theme-color" content="#ffffff" />
 
 		<meta name="generator" content={Astro.generator} />
-		<title>Focalis Stratega Group</title>
+		<title>{title}</title>
 	</head>
 	<body>
 		<slot />
