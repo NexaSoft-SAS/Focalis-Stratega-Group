@@ -34,6 +34,51 @@ import { brand } from "./theme";
 // Assets
 import focalisLogo from "@/assets/Logo Focalis V1.png";
 
+const regulationsData = [
+  { sector: "Agua", norma: "Res. 0631 / ISO 14046", foco: "Vertimientos e impacto hídrico" },
+  { sector: "Energía", norma: "Ley 1715 / ISO 50001", foco: "Incentivos UPME y eficiencia" },
+  { sector: "Carbono", norma: "Ley 2169 / ISO 14064", foco: "Carbono neutralidad e impuestos" },
+  { sector: "Alimentos", norma: "Res. 2674 / ISO 22000", foco: "Registro INVIMA y BPM en plantas" }
+];
+
+const RegulationsTable = () => (
+  <div className="rounded-xl border border-white/10 bg-white/5 overflow-hidden">
+    <div className="p-3 border-b border-white/10 bg-white/10 flex items-center justify-between flex-wrap gap-2">
+      <span className="font-semibold text-xs flex items-center gap-1.5 text-white/95">
+        📋 Consulta de Normatividad Vigente (Colombia)
+      </span>
+      <a 
+        href="/REGULATIONS.md" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="text-[10px] text-sky-200 hover:text-white underline transition-colors"
+      >
+        Ver compendio técnico
+      </a>
+    </div>
+    <div className="overflow-x-auto">
+      <table className="w-full text-left border-collapse text-[11.5px]">
+        <thead>
+          <tr className="border-b border-white/10 bg-white/5 text-white/70 font-medium">
+            <th className="p-2">Sector</th>
+            <th className="p-2">Norma / Estándar</th>
+            <th className="p-2">Foco de Cumplimiento</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-white/5">
+          {regulationsData.map((reg, i) => (
+            <tr key={i} className="hover:bg-white/5 transition-colors">
+              <td className="p-2 font-semibold text-sky-300">{reg.sector}</td>
+              <td className="p-2 font-mono text-[10px] text-white/95">{reg.norma}</td>
+              <td className="p-2 text-white/80">{reg.foco}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+);
+
 /**
  * BrochureFocalis - Main brochure page component
  * Orchestrates the layout of the 4-panel brochure
@@ -154,6 +199,9 @@ export default function BrochureFocalis() {
                   
                   {/* Methodology & Differentials */}
                   <MethodologyCard points={methodologyPoints} dark />
+
+                  {/* Regulations Consultation Table */}
+                  <RegulationsTable />
                   
                   <div className="grid sm:grid-cols-2 gap-4 mt-auto">
                     <ContactCard contact={contactInfo} />

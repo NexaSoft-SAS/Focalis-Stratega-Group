@@ -17,31 +17,31 @@ import {
 export const challenges = [
   {
     id: 'costs',
-    label: 'Optimizar Operaciones',
+    label: 'Reducir Costos y Sanciones',
     icon: DollarSign,
     color: 'emerald',
-    description: 'Minimice desvíos presupuestarios y optimice el uso de recursos técnicos.'
+    description: 'Minimice el pago de tasas retributivas, multas ambientales e impuestos ineficientes.'
   },
   {
     id: 'speed',
-    label: 'Acelerar Ejecución',
+    label: 'Agilizar Trámites y Radicados',
     icon: Zap,
     color: 'amber',
-    description: 'Reduzca plazos de diseño, cálculo e interventoría con automatización.'
+    description: 'Obtenga especificaciones técnicas y reportes listos para radicar ante entes de control.'
   },
   {
     id: 'decisions',
-    label: 'Predecir Riesgos',
+    label: 'Asegurar Cumplimiento Regulatorio',
     icon: Brain,
     color: 'blue',
-    description: 'Anticipe fallas mecánicas, estructurales o variaciones críticas de flujo.'
+    description: 'Monitoree de forma continua el cumplimiento de las normas ambientales y sanitarias vigentes.'
   },
   {
     id: 'automation',
-    label: 'Automatizar Procesos',
+    label: 'Reportes Pre-empaquetados',
     icon: RefreshCcw,
     color: 'violet',
-    description: 'Libera tiempo técnico eliminando tareas manuales de cálculo y reportes.'
+    description: 'Genere informes técnicos automatizados y cálculos mecánicos verificados con IA.'
   }
 ];
 
@@ -50,82 +50,82 @@ export const solutions = [
   {
     id: 'water_ai',
     icon: Droplets,
-    title: 'Optimización de Recursos Hídricos',
-    subtitle: 'Modelos predictivos para agua y saneamiento',
-    description: 'Control inteligente en plantas de tratamiento, redes de distribución y almacenamiento de agua con algoritmos de IA.',
+    title: 'Cumplimiento de Vertimientos (Res. 0631)',
+    subtitle: 'Dirección técnica y control de efluentes',
+    description: 'Modelos predictivos y cálculos hidráulicos automáticos para garantizar el cumplimiento de la Resolución 0631 ante la CAR / ANLA en plantas de alimentos e industria.',
     benefits: [
-      'Reducción de pérdidas físicas en el transporte de fluidos',
-      'Predicción precisa de demanda de agua y niveles de stock',
-      'Optimización del consumo energético en sistemas de bombeo',
-      'Monitoreo predictivo y autónomo de calidad de agua'
+      'Cálculos hidráulicos de dosificación de reactivos en PTAR asistidos por IA',
+      'Predicción y alertas de desvíos en parámetros fisicoquímicos críticos (pH, DQO, DBO5)',
+      'Homologación ágil de proveedores de equipos y sistemas de filtración',
+      'Ahorro en tasas retributivas por optimización de carga contaminante'
     ],
     relatedChallenges: ['costs', 'speed', 'decisions'],
     implementationTime: '3-6 semanas',
     kpis: {
-      costs: { value: '25%', label: 'Ahorro en energía de bombeo' },
-      speed: { value: '-40%', label: 'Tiempo en control de flujos' },
-      decisions: { value: '98%', label: 'Precisión en previsión de stock' }
+      costs: { value: '35%', label: 'Reducción en pago de tasas retributivas' },
+      speed: { value: '-50%', label: 'Tiempo de radicación ante la CAR' },
+      decisions: { value: '100%', label: 'Blindaje contra cierres o multas de la CAR' }
     }
   },
   {
     id: 'energy_ai',
     icon: Zap,
-    title: 'Eficiencia Energética y Redes Inteligentes',
-    subtitle: 'Predicción y adaptación de fuentes renovables',
-    description: 'Modelado predictivo de generación solar/eólica y gestión automatizada del almacenamiento de carga y microrredes.',
+    title: 'Incentivos UPME y Transición Energética',
+    subtitle: 'Eficiencia energética y Ley 1715 de 2014',
+    description: 'Estructuración de proyectos solares, eólicos y de cogeneración con auditorías de eficiencia (ISO 50001) para acceder a los beneficios fiscales de la Ley 1715.',
     benefits: [
-      'Maximización del aprovechamiento de fuentes de energía renovable',
-      'Control predictivo inteligente para almacenamiento en baterías',
-      'Balanceo automático de carga y estabilidad de microrredes',
-      'Disminución del desvío de consumo versus generación'
+      'Pre-calificación y cálculo automático de exención de IVA y aranceles',
+      'Modelado de retorno de inversión renta con deducción especial del 50%',
+      'Cálculo y diseño de perfiles de carga industrial con optimización de IA',
+      'Auditorías de eficiencia energética express bajo el estándar ISO 50002'
     ],
     relatedChallenges: ['costs', 'speed', 'decisions', 'automation'],
     implementationTime: '4-8 semanas',
     kpis: {
-      costs: { value: '30%', label: 'Reducción de costos de red' },
-      speed: { value: '15x', label: 'Mayor velocidad de respuesta' },
-      decisions: { value: '+92%', label: 'Estabilidad de carga prevista' },
-      automation: { value: '95%', label: 'Autonomía de despacho' }
+      costs: { value: '50%', label: 'Deducción especial del valor invertido en renta' },
+      speed: { value: '19%', label: 'Exclusión inmediata del IVA en equipos' },
+      decisions: { value: '100%', label: 'Viabilidad técnica aprobada UPME' },
+      automation: { value: '30%', label: 'Ahorro promedio en la factura de energía' }
     }
   },
   {
     id: 'carbon_ai',
     icon: Leaf,
-    title: 'Huella de Carbono y Monitoreo ESG',
-    subtitle: 'Medición automatizada y trazabilidad',
-    description: 'Cálculo dinámico y monitoreo continuo del impacto ecológico mediante sensores IoT e IA para el cumplimiento de objetivos ESG.',
+    title: 'Carbono Neutralidad e Impuesto al Carbono',
+    subtitle: 'ISO 14064 y exención del Decreto 926 de 2017',
+    description: 'Cálculo de huella de carbono organizacional (ISO 14064) y diseño de planes de compensación para la no causación del Impuesto Nacional al Carbono.',
     benefits: [
-      'Cálculo automático de emisiones bajo estándares de protocolo',
-      'Conexión directa con sensores de campo (IoT) para datos reales',
-      'Generación inteligente de reportes y auditorías ecológicas',
-      'Roadmap predictivo para reducción de huella'
+      'Cálculo automatizado de factores de emisión según directrices IPCC y UPME',
+      'Integración de plataformas de monitoreo continuo operadas por Nexasoft SAS',
+      'Certificados de carbono neutralidad listos para radicar ante la DIAN',
+      'Estructuración técnica de proyectos elegibles para el mercado de carbono'
     ],
     relatedChallenges: ['costs', 'decisions', 'automation'],
     implementationTime: '3-5 semanas',
     kpis: {
-      costs: { value: '20%', label: 'Ahorro por impuestos de carbono' },
-      decisions: { value: '100%', label: 'Trazabilidad de datos de impacto' },
-      automation: { value: '90%', label: 'Menos esfuerzo en reportes' }
+      costs: { value: '100%', label: 'Exención del Impuesto Nacional al Carbono' },
+      decisions: { value: 'Real', label: 'Trazabilidad de huella bajo ISO 14067' },
+      automation: { value: '90%', label: 'Reducción de esfuerzo administrativo en reportes' }
     }
   },
   {
     id: 'predictive_maintenance',
     icon: Activity,
-    title: 'Gemelos Digitales y Mantenimiento de Activos',
-    subtitle: 'Predicción de fallas en infraestructura civil',
-    description: 'Algoritmos avanzados para predecir fallas estructurales o mecánicas y simular comportamiento de activos sin riesgos.',
+    title: 'Estandarización y Trazabilidad Agroindustrial',
+    subtitle: 'Resolución 2674 de 2013 (INVIMA / BPM)',
+    description: 'Modelado y diseño de flujos de proceso asistidos por IA para pequeñas plantas de alimentos (ej. bocadillos), garantizando el cumplimiento sanitario del INVIMA.',
     benefits: [
-      'Identificación temprana de fatiga de materiales y fugas',
-      'Planificación optimizada de mantenimiento preventivo',
-      'Simulaciones avanzadas ante desastres o sobrecargas',
-      'Prolongación de la vida útil de presas, tuberías y plantas'
+      'Diseño inteligente de layout de planta optimizando flujos y evitando contaminación cruzada',
+      'Fichas técnicas y especificaciones mecánicas automáticas para maquinaria industrial',
+      'Simulaciones térmicas y mecánicas para pasteurizadores, calderas e intercambiadores',
+      'Trazabilidad digital e inocuidad alimentaria bajo el estándar ISO 22000'
     ],
     relatedChallenges: ['costs', 'decisions', 'automation'],
-    implementationTime: '6-10 semanas',
+    implementationTime: '2-4 semanas',
     kpis: {
-      costs: { value: '35%', label: 'Menos costos por fallas críticas' },
-      decisions: { value: '+95%', label: 'Precisión de alertas tempranas' },
-      automation: { value: '75%', label: 'Inspecciones digitalizadas' }
+      costs: { value: '0', label: 'Riesgo de sanciones o cierres por INVIMA' },
+      decisions: { value: '100%', label: 'Cumplimiento de Buenas Prácticas de Manufactura' },
+      automation: { value: '14 días', label: 'Entrega de propuesta técnica completa' }
     }
   }
 ];
@@ -133,24 +133,24 @@ export const solutions = [
 // Global KPIs shown in the dashboard panel
 export const globalKPIs = {
   costs: [
-    { label: 'Reducción en pérdidas de fluidos/energía', value: '15-30%', icon: '💧' },
-    { label: 'Ahorro en costos de mantenimiento', value: '25-40%', icon: '🛠️' },
-    { label: 'Retorno de Inversión (ROI) estimado', value: '<12 mes', icon: '📈' }
+    { label: 'Exclusiones fiscales e IVA en proyectos', value: '19% - 50%', icon: '💰' },
+    { label: 'Ahorro por tasas retributivas y multas de CAR', value: '35-60%', icon: '💧' },
+    { label: 'Retorno de Inversión (ROI) de transición', value: '<12 meses', icon: '📈' }
   ],
   speed: [
-    { label: 'Reducción de tiempos de diseño/cálculo', value: '60-80%', icon: '⚡' },
-    { label: 'Generación automatizada de reportes', value: '100%', icon: '📄' },
-    { label: 'Tiempo de respuesta ante alertas críticas', value: '<2 seg', icon: '⏱️' }
+    { label: 'Pre-evaluación de especificaciones técnicas con IA', value: '70-90%', icon: '⚡' },
+    { label: 'Generación de informes de cumplimiento regulatorios', value: '100%', icon: '📄' },
+    { label: 'Plazo diagnóstico exprés inicial de planta', value: '14 días', icon: '⏱️' }
   ],
   decisions: [
-    { label: 'Precisión en predicciones de fallas/flujo', value: '+95%', icon: '🎯' },
-    { label: 'Evitación de fallas operativas críticas', value: '90%', icon: '🛡️' },
-    { label: 'Visibilidad 360° de activos de campo', value: 'Real', icon: '👁️' }
+    { label: 'Aprobación de incentivos ante la UPME/ANLA', value: '100%', icon: '🎯' },
+    { label: 'Blindaje ante auditorías sanitarias y ambientales', value: '98%', icon: '🛡️' },
+    { label: 'Trazabilidad de auditoría documental y de sitio', value: 'ISO/PMI', icon: '👁️' }
   ],
   automation: [
-    { label: 'Monitoreo de impacto automatizable', value: '85%', icon: '🤖' },
-    { label: 'Reducción de errores de reporte técnico', value: '98%', icon: '✅' },
-    { label: 'Escalabilidad sin sensorización extra', value: 'Trazable', icon: '📊' }
+    { label: 'Monitoreo de parámetros vía IoT de Nexasoft SAS', value: '85%', icon: '🤖' },
+    { label: 'Verificación de cálculos y especificaciones mecánicas', value: '99%', icon: '✅' },
+    { label: 'Escalabilidad operativa en plantas medianas y pequeñas', value: 'Modular', icon: '📊' }
   ]
 };
 
@@ -158,37 +158,37 @@ export const globalKPIs = {
 export const timelineSteps = [
   {
     step: 1,
-    title: 'Diagnóstico Técnico',
-    description: 'Análisis de flujos de datos y oportunidades de optimización',
-    duration: '2-4 días',
+    title: 'Diagnóstico Exprés de Planta',
+    description: 'Análisis de datos de consumo y brechas de cumplimiento regulatorio local',
+    duration: '14 días',
     icon: '🔍'
   },
   {
     step: 2,
-    title: 'Modelado y Diseño',
-    description: 'Estructuración del gemelo digital y algoritmos de IA',
-    duration: '1-2 semanas',
+    title: 'Estructuración y Layout',
+    description: 'Estructuración del proyecto (PMO), especificaciones técnicas e ingeniería de detalle con IA',
+    duration: '2-3 semanas',
     icon: '📐'
   },
   {
     step: 3,
-    title: 'Implementación e Integración',
-    description: 'Despliegue de sensores IoT e integración con software técnico',
+    title: 'Vetting e Implementación',
+    description: 'Homologación de contratistas locales, subcontratación de interventoría de obra e inicio de montaje',
     duration: '4-8 semanas',
     icon: '⚙️'
   },
   {
     step: 4,
-    title: 'Optimización Continua',
-    description: 'Reentrenamiento de modelos y validación del ROI operativo',
-    duration: 'Continuo',
+    title: 'Radicación e Incentivos',
+    description: 'Entrega de informes regulatorios pre-empaquetados y radicación ante UPME, CAR o INVIMA',
+    duration: '1-2 semanas',
     icon: '📈'
   }
 ];
 
 // Value proposition texts
 export const heroContent = {
-  title: 'Inteligencia Artificial Aplicada a Ingeniería',
-  subtitle: 'Soluciones de IA para optimizar la gestión de agua, transición energética y sostenibilidad',
-  description: 'Identifique su prioridad técnica y descubra cómo la IA optimiza procesos e impacto de forma medible.'
+  title: 'PMO e Ingeniería Estratégica Asistida por IA',
+  subtitle: 'Aseguramiento de cumplimiento normativo, incentivos UPME y ahorro en plantas industriales',
+  description: 'Identifique su prioridad de cumplimiento y descubra cómo optimizamos sus procesos técnicos de forma rentable y segura.'
 };

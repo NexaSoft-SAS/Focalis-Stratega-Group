@@ -7,7 +7,7 @@ const ImpactoVerdeComponent = ({ data }) => {
 
   // Prepare data for pie chart
   const pieData = [
-    { name: 'Reducción Conseguida', value: co2Reduction.percentage },
+    { name: 'Cumplimiento Alcanzado', value: co2Reduction.percentage },
     { name: 'Objetivo Pendiente', value: 100 - co2Reduction.percentage }
   ];
 
@@ -30,7 +30,7 @@ const ImpactoVerdeComponent = ({ data }) => {
 
   return (
     <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-      <h2 className="text-xl font-semibold text-gray-900 mb-6">Impacto Verde Actual</h2>
+      <h2 className="text-xl font-semibold text-gray-900 mb-6">Indicadores de Ahorro y Cumplimiento</h2>
       
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* CO2 Reduction Chart */}
@@ -62,7 +62,7 @@ const ImpactoVerdeComponent = ({ data }) => {
                   <div className="text-3xl font-bold text-emerald-600">
                     {co2Reduction.percentage}%
                   </div>
-                  <div className="text-sm text-gray-500">CO₂ reducido</div>
+                  <div className="text-sm text-gray-500">Cumplimiento</div>
                 </div>
               </div>
             </div>
@@ -105,10 +105,10 @@ const ImpactoVerdeComponent = ({ data }) => {
                     {formatNumber(metric.value, metric.unit)}
                   </div>
                   <div className="text-xs text-gray-500">
-                    {key === 'energySaved' && 'Energía ahorrada'}
-                    {key === 'waterSaved' && 'Agua conservada'}
-                    {key === 'economicBenefit' && 'Ahorro económico'}
-                    {key === 'wasteReduction' && 'Residuos reducidos'}
+                    {key === 'energySaved' && 'Ahorro en factura energética'}
+                    {key === 'waterSaved' && 'Reducción de tasas retributivas'}
+                    {key === 'economicBenefit' && 'Ahorro fiscal acumulado'}
+                    {key === 'wasteReduction' && 'Residuos y costos reducidos'}
                   </div>
                 </div>
               </div>

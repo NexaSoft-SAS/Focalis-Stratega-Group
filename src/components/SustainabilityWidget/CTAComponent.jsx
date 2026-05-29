@@ -111,9 +111,9 @@ const CTAComponent = ({ onFormSubmit }) => {
             <Rocket className="w-8 h-8 text-white" />
           </div>
           
-          <h2 className="text-2xl font-bold mb-4">¿Listo para el cambio sostenible?</h2>
+          <h2 className="text-2xl font-bold mb-4">¿Listo para asegurar cumplimiento y ahorrar?</h2>
           <p className="text-emerald-100 mb-8 max-w-md mx-auto">
-            Obtén un diagnóstico personalizado de tu huella de carbono y descubre cómo reducir costos mientras mejoras tu impacto ambiental.
+            Obtén un Diagnóstico Exprés de 14 días para identificar brechas de cumplimiento regulatorio (Res. 0631, Ley 1715, INVIMA) y optimizar costos de inmediato.
           </p>
           
           <Button 
@@ -121,13 +121,13 @@ const CTAComponent = ({ onFormSubmit }) => {
             className="bg-white text-emerald-600 hover:bg-emerald-50 font-semibold px-6 sm:px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-sm sm:text-base"
           >
             <Rocket className="w-5 h-5 mr-2" />
-            Solicitar Diagnóstico Verde
+            Solicitar Diagnóstico Exprés
           </Button>
           
           <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 text-sm text-emerald-100">
             <div className="flex items-center gap-2">
               <CheckCircle className="w-4 h-4" />
-              <span>Análisis gratuito</span>
+              <span>Diagnóstico de 14 días</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle className="w-4 h-4" />
@@ -154,12 +154,12 @@ const CTAComponent = ({ onFormSubmit }) => {
           )}
         </div>
         <h3 className="text-xl font-semibold text-gray-900 mb-2">
-          {isSubmitted ? "¡Solicitud Enviada!" : "Solicitar Diagnóstico Verde"}
+          {isSubmitted ? "¡Solicitud Enviada!" : "Solicitar Diagnóstico Exprés de Cumplimiento"}
         </h3>
         <p className="text-gray-600 text-sm">
           {isSubmitted 
             ? "Nos pondremos en contacto contigo pronto" 
-            : "Completa el formulario para recibir tu análisis personalizado"
+            : "Completa el formulario para recibir tu análisis regulatorio personalizado"
           }
         </p>
       </div>
@@ -235,7 +235,7 @@ const CTAComponent = ({ onFormSubmit }) => {
               name="message"
               value={formData.message}
               onChange={handleInputChange}
-              placeholder="Cuéntanos sobre tus objetivos de sostenibilidad..."
+              placeholder="Cuéntanos sobre los retos de cumplimiento o necesidades de ahorro en tu planta..."
               rows={3}
               className="w-full"
             />

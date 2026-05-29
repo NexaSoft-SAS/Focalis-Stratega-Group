@@ -13,42 +13,42 @@ import {
 export const servicesPartOne = [
   {
     icon: Cpu,
-    title: "Inteligencia Artificial Aplicada a Ingeniería",
+    title: "Ingeniería Estratégica Asistida por IA",
     bullets: [
-      "Optimización de procesos mecánicos e hidráulicos con IA",
-      "Modelos predictivos para gestión de infraestructura física",
-      "Automatización de toma de decisiones técnicas complejas",
-      "Reducción de costos de diseño y simulación (redes neuronales)",
+      "Optimización de diseños y perfiles de carga mediante modelos de IA",
+      "Cálculos mecánicos, térmicos e hidráulicos validados digitalmente",
+      "Selección automatizada de tecnologías emergentes bajo condiciones locales",
+      "Análisis predictivo de viabilidad técnica para plantas industriales",
     ],
   },
   {
     icon: Droplets,
-    title: "Gestión Inteligente y Suministro de Agua",
+    title: "Gestión Hídrica y Vertimientos (Res. 0631)",
     bullets: [
-      "Diseño de sistemas para tratamiento, potabilización y distribución",
-      "Control inteligente de stock y reservas hídricas críticas",
-      "Optimización en transporte de fluidos y detección de fugas",
-      "Modelado predictivo de consumo, oferta e hidrología",
+      "Dirección técnica (PMO) para sistemas de tratamiento y distribución de agua",
+      "Aseguramiento de cumplimiento de límites permisibles de vertimientos (Res. 0631 de 2015)",
+      "Control de stock de reservas hídricas críticas y monitoreo de huella (ISO 14046)",
+      "Vetting y homologación de contratistas de obra civil hidráulica",
     ],
   },
   {
     icon: Sun,
-    title: "Transición y Adaptación de Energías Renovables",
+    title: "Eficiencia Energética e Incentivos Ley 1715",
     bullets: [
-      "Adaptación de sistemas solares fotovoltaicos y eólicos",
-      "Integración de microrredes aisladas (off-grid) y conectadas",
-      "Diagnósticos de eficiencia y reducción del consumo energético",
-      "Gestión inteligente de almacenamiento y perfiles de carga",
+      "Estructuración de proyectos solares y eólicos para industria emergente",
+      "Trámite de incentivos tributarios UPME (exclusión de IVA y deducción de renta del 50%)",
+      "Auditorías energéticas bajo estándares ISO 50001 e ISO 50002",
+      "Optimización inteligente de almacenamiento y microrredes aisladas",
     ],
   },
   {
     icon: Leaf,
-    title: "Medición Digital de Impacto y Huella de Carbono",
+    title: "Carbono Neutralidad y Beneficios Tributarios",
     bullets: [
-      "Plataformas a medida para cálculo y reporte de CO₂",
-      "Integración de sensores IoT para monitoreo ambiental continuo",
-      "Dashboards en tiempo real de indicadores de sostenibilidad",
-      "Trazabilidad digital completa del ciclo de vida del proyecto",
+      "Cuantificación de emisiones de gases de efecto invernadero (ISO 14064 / 14067)",
+      "Reportes pre-empaquetados de cumplimiento para carbono neutralidad",
+      "Estrategias de no causación del Impuesto Nacional al Carbono (Decreto 926 de 2017)",
+      "Trazabilidad completa de indicadores ESG e impacto ambiental",
     ],
   },
 ];
@@ -57,59 +57,59 @@ export const servicesPartOne = [
 export const servicesPartTwo = [
   {
     icon: ClipboardList,
-    title: "Consultoría y Gerencia de Proyectos (PMO)",
+    title: "Gerencia Integral de Proyectos (PMO Premium)",
     bullets: [
-      "Estructuración técnica, contractual y financiera de obras",
-      "Dirección de programas complejos bajo estándar PMI e ISO/IEC",
-      "Control estricto de riesgos, costos y desviaciones",
-      "Garantía de Retorno de Inversión (ROI) y valor empresarial",
+      "Dirección y control de costos, cronogramas y riesgos bajo estándar PMI",
+      "Intermediación técnica y contractual entre clientes y proveedores de tecnología",
+      "Estructuración financiera con enfoque en maximización del ROI y ahorro",
+      "Garantía de continuidad operativa en la transición de plantas industriales",
     ],
   },
   {
     icon: Hammer,
-    title: "Interventoría Técnica y Supervisión de Obra",
+    title: "Interventoría Estratégica de Cumplimiento",
     bullets: [
-      "Dirección e interventoría técnica e independiente de obras",
-      "Auditorías de cumplimiento normativo y ambiental en sitio",
-      "Control de calidad riguroso en materiales y construcción",
-      "Cálculos críticos, peritajes y revisiones estructurales",
+      "Supervisión independiente de contratistas de diseño y obra civil",
+      "Auditorías de calidad física y documental en sitio (ISO 9001, ISO 14001)",
+      "Verificación de especificaciones de materiales y peritajes estructurales",
+      "Garantía de blindaje regulatorio y ambiental ante autoridades locales",
     ],
   },
   {
     icon: Compass,
-    title: "Desarrollo Sostenible y Estrategia ESG",
+    title: "Estandarización y Trazabilidad Agroindustrial",
     bullets: [
-      "Diseño de proyectos civiles alineados con objetivos ESG",
-      "Planes estratégicos para carbono neutralidad corporativa",
-      "Evaluación y mitigación predictiva del impacto ecológico",
-      "Diseño de modelos de economía circular y reuso de recursos",
+      "Adecuación de plantas de alimentos al cumplimiento sanitario (Res. 2674 / INVIMA)",
+      "Diseño de layouts de planta y flujos de proceso optimizados con IA",
+      "Trazabilidad de inocuidad alimentaria según estándar ISO 22000",
+      "Planes estratégicos de economía circular y reuso de subproductos",
     ],
   },
   {
     icon: LineChart,
-    title: "Analítica de Datos Avanzada e IoT Industrial",
+    title: "Monitoreo Continuo e Informes de Cumplimiento",
     bullets: [
-      "Dashboards ejecutivos con visualización de datos operacionales",
-      "Algoritmos de mantenimiento predictivo para infraestructura",
-      "Optimización analítica de cadena de suministro e inventario",
-      "Sistemas de reportería automatizada para tomadores de decisión",
+      "Entrega de informes pre-empaquetados de cumplimiento para alcaldías e industria",
+      "Visualización en dashboards interactivos provistos por Nexasoft SAS",
+      "Establecimiento de líneas base y medición del desempeño (ISO 50006 / ISO 55001)",
+      "Alertas tempranas de desviación operativa y de consumo en tiempo real",
     ],
   },
 ];
 
 // Methodology differentials
 export const methodologyPoints = [
-  "Gobierno de proyectos según PMI e integración con sistemas ISO/IEC.",
-  "Analítica e IA para priorización, control y trazabilidad.",
-  "Enfoque en ROI, cumplimiento y continuidad operativa.",
-  "Reportería ejecutiva y visibilidad 360° para los interesados.",
+  "Gobierno de proyectos bajo estándar PMI e integración con ISO 9001, ISO 14001 e ISO 55001.",
+  "Ingeniería de detalle y cálculos técnicos verificados con herramientas de IA (Nexasoft SAS).",
+  "Enfoque en ROI, incentivos tributarios (Ley 1715) y blindaje regulatorio.",
+  "Reportes pre-empaquetados de cumplimiento listos para radicar ante UPME, CAR o INVIMA.",
 ];
 
 // Cover stats
 export const coverStats = [
-  { label: "Estándares", value: "ISO/IEC · PMI" },
-  { label: "Enfoque", value: "ROI + Cumplimiento" },
-  { label: "Trazabilidad", value: "100%" },
+  { label: "Estándares", value: "ISO · PMI" },
+  { label: "Enfoque", value: "Cumplimiento + Ahorro" },
+  { label: "Diagnóstico", value: "14 días" },
 ];
 
 // Contact info
@@ -132,17 +132,17 @@ export const socialLinks = [
 export const ctaButtons = [
   {
     href: "/sustainability",
-    emoji: "🌱",
-    label: "Identifica Tu Impacto Verde",
+    emoji: "📋",
+    label: "Diagnóstico de Cumplimiento",
   },
   {
     href: "/ai-projects",
     emoji: "🚀",
-    label: "Emprende con IA",
+    label: "Ingeniería Asistida por IA",
   },
 ];
 
 // Badges
-export const badgesPartOne = ["Gobierno & Dirección", "Obra & Calidad"];
-export const badgesPartTwo = ["Escalabilidad & Marca", "Liderazgo"];
-export const badgesBack = ["Energía y Agua", "Transformación Digital", "Desarrollo Sostenible"];
+export const badgesPartOne = ["IA & Ingeniería", "Agua & Energía"];
+export const badgesPartTwo = ["PMO & Interventoría", "Agroindustria & Monitoreo"];
+export const badgesBack = ["Cumplimiento Regulatorio", "Incentivos UPME", "Trazabilidad ISO"];

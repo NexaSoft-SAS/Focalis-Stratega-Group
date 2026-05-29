@@ -14,16 +14,16 @@ const HeaderComponent = ({ title, subtitle }) => {
           </div>
           <div className="flex items-center gap-2 px-3 py-1 bg-emerald-100 rounded-full">
             <TrendingUp className="w-4 h-4 text-emerald-600" />
-            <span className="text-sm font-medium text-emerald-700">Impacto Medible</span>
+            <span className="text-sm font-medium text-emerald-700">Cumplimiento Verificado</span>
           </div>
         </div>
         
         <h1 className="text-2xl font-bold text-gray-900 mb-2">
-          {title || "Dashboard de Sostenibilidad Empresarial"}
+          {title || "Panel de Cumplimiento y Ahorro Industrial"}
         </h1>
         
         <p className="text-gray-600 max-w-2xl leading-relaxed">
-          {subtitle || "Transforme su estrategia empresarial con soluciones sostenibles que generan valor medible. Reduzca costos, mejore su reputación y cumpla objetivos ESG."}
+          {subtitle || "Asegure el cumplimiento de la normatividad colombiana (Res. 0631, Ley 1715, INVIMA), acceda a incentivos tributarios y reduzca costos operativos con dirección técnica PMO e ingeniería asistida por IA."}
         </p>
       </div>
     </div>
