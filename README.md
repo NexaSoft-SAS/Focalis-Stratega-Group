@@ -5,6 +5,7 @@ Gerencia integral de proyectos de ingeniería (PMO), aseguramiento de cumplimien
 ## Deployed 🧑‍🚀
 
 > https://focalis-stratega-group.pages.dev/
+> (Updated: May 30, 2026 — Google Sheets integration active)
 
 ## Tech Stack
 
