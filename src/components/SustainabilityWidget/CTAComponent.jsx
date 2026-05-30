@@ -45,21 +45,35 @@ const CTAComponent = ({ onFormSubmit }) => {
       // Get backend URL from environment (Vite uses import.meta.env)
       const BACKEND_URL = import.meta.env.PUBLIC_BACKEND_URL;
       
-      // Send to backend API
-      const response = await fetch(`${BACKEND_URL}/api/diagnostico/`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(apiData)
-      });
+      let result = null;
+      if (BACKEND_URL && BACKEND_URL.includes('script.google.com')) {
+        // Direct integration with Google Apps Script Web App (bypassing CORS)
+        await fetch(BACKEND_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(apiData)
+        });
+        result = { success: true, message: 'Google Apps Script submission complete' };
+      } else {
+        // Send to standard backend API
+        const response = await fetch(`${BACKEND_URL}/api/diagnostico/`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(apiData)
+        });
 
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.detail || 'Error al enviar solicitud');
+        if (!response.ok) {
+          const errorData = await response.json();
+          throw new Error(errorData.detail || 'Error al enviar solicitud');
+        }
+
+        result = await response.json();
       }
-
-      const result = await response.json();
       
       // Call parent handler if provided
       if (onFormSubmit) {
