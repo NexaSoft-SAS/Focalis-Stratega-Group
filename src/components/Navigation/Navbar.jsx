@@ -116,3 +116,4 @@ const Navbar = ({ currentPath = '' }) => {
 };
 
 export default Navbar;
+
