@@ -1,0 +1,25 @@
+---
+import "@/styles/global.css";
+import Layout from "@/layouts/Layout.astro";
+import EnergyWidget from "@/components/EnergyWidget/EnergyWidget";
+
+const handleFormSubmit = (formData: any) => {
+    console.log("Energy form submitted:", formData);
+};
+---
+
+<Layout
+  title="Transición Energética Solar e Incentivos UPME | Focalis Stratega Group"
+  description="Estructure su proyecto de energía solar fotovoltaica, acceda a los incentivos tributarios de la Ley 1715 de 2014 y reduzca su factura energética con dirección técnica PMO."
+>
+    <div
+        class="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 py-8 px-4"
+    >
+        <EnergyWidget
+            client:only="react"
+            title="Transición Energética Solar para la Industria"
+            subtitle="Estructuración de proyectos fotovoltaicos, trámite de incentivos UPME (Ley 1715) y reducción de la factura energética con dirección técnica PMO."
+            onFormSubmit={handleFormSubmit}
+        />
+    </div>
+</Layout>

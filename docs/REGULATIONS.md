@@ -26,7 +26,14 @@ Este documento detalla el marco regulatorio y los estándares internacionales (I
         2.  **Exclusión de IVA:** Exclusión de IVA en la adquisición de equipos, maquinaria y servicios nacionales o importados para proyectos de energías limpias o eficiencia.
         3.  **Exención de Aranceles:** Exención de derechos arancelarios para equipos importados no fabricados nacionalmente.
         4.  **Depreciación Acelerada:** Depreciación de los activos en un periodo anual no menor al 20%.
-*   **Resolución UPME 203 de 2020:** Establece los requisitos técnicos y procedimientos para acceder a los incentivos de la Ley 1715 para proyectos de eficiencia energética.
+*   **Resolución UPME 203 de 2020:** Establece los requisitos técnicos y procedimientos para acceder a los incentivos de la Ley 1715 para proyectos de eficiencia energética y FNCER (registro en SIREE, estudio de viabilidad y certificación ante DIAN).
+*   **Resolución CREG 030 de 2018 (Autogeneración a Pequeña Escala y Generación Distribuida):** Regula la generación distribuida y la entrega de excedentes a la red (net metering / net billing):
+    *   Permite a usuarios con potencia instalada ≤ 1 MW autogenerar energía solar e inyectar excedentes a la red eléctrica del Sistema Interconectado Nacional (SIN).
+    *   Define el esquema de valoración económica y comercial de créditos de energía para descuento directo en la factura o remuneración horaria.
+    *   Aplica directamente a pequeñas y medianas plantas industriales, agroindustria y sedes administrativas/alcaldías.
+*   **NTC 2050 (Código Eléctrico Colombiano) y RETIE (Reglamento Técnico de Instalaciones Eléctricas):**
+    *   *NTC 2050:* Código normativo obligatorio para el diseño, dimensionamiento, protecciones y cableado de instalaciones eléctricas en baja y media tensión, aplicable a sistemas solares fotovoltaicos.
+    *   *RETIE (Ministerio de Minas y Energía):* Certificación de conformidad técnica y de seguridad de obligatorio cumplimiento para toda nueva instalación eléctrica o sistema de autogeneración previo a su energización. Debe ser expedida por un organismo de inspección acreditado por el Organismo Nacional de Acreditación de Colombia (ONAC).
 
 ### Estándares Internacionales de Soporte
 *   **ISO 50001 (Energy Management System):** Requisitos para establecer, implantar, mantener y mejorar un sistema de gestión de la energía, clave para el diseño de plantas industriales de alta eficiencia.

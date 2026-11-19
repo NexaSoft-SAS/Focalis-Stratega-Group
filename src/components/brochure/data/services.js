@@ -140,6 +140,11 @@ export const ctaButtons = [
     emoji: "🚀",
     label: "Ingeniería Asistida por IA",
   },
+  {
+    href: "/energy",
+    emoji: "☀️",
+    label: "Transición Energética Solar",
+  },
 ];
 
 // Badges

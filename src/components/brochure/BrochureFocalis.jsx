@@ -105,7 +105,7 @@ export default function BrochureFocalis() {
                     <div className="mt-1 text-[0.8rem] opacity-80 text-nowrap">
                       Estrategas de proyectos
                     </div>
-                    <div className="mt-6 flex flex-wrap gap-3 md:flex-row flex-col p-4 text-lg">
+                    <div className="mt-4 flex flex-wrap gap-3 md:flex-row flex-col p-2">
                       {ctaButtons.map((btn, i) => (
                         <CTAButton key={i} {...btn} />
                       ))}
