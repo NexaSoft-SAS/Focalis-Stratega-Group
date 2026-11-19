@@ -1,6 +1,7 @@
 ---
 import "@/styles/global.css";
 import Layout from "@/layouts/Layout.astro";
+import Navbar from "@/components/Navigation/Navbar";
 import EnergyWidget from "@/components/EnergyWidget/EnergyWidget";
 
 const handleFormSubmit = (formData: any) => {
@@ -15,6 +16,7 @@ const handleFormSubmit = (formData: any) => {
     <div
         class="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 py-8 px-4"
     >
+        <Navbar currentPath="/energy" client:load />
         <EnergyWidget
             client:only="react"
             title="Transición Energética Solar para la Industria"

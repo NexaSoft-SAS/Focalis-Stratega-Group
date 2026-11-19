@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import Layout from "../layouts/Layout.astro";
+import Navbar from "@/components/Navigation/Navbar";
 import SustainabilityWidget from "@/components/SustainabilityWidget/SustainabilityWidget";
 
 const handleFormSubmit = (formData: any) => {
@@ -12,6 +13,7 @@ const handleFormSubmit = (formData: any) => {
     <div
         class="min-h-screen bg-gradient-to-br from-gray-50 via-green-50 to-emerald-50 py-8 px-4"
     >
+        <Navbar currentPath="/sustainability" client:load />
         <SustainabilityWidget
             client:only="react"
             title="Dashboard de Sostenibilidad e Impacto Verde"
