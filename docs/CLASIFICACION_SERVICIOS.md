@@ -138,3 +138,4 @@ Focalis estructura su relación comercial en 3 etapas sucesivas que reducen el r
 | **CAR / Autoridades Ambientales** | Permiso de vertimientos, concesión de aguas y plan de contingencia | Caracterización de vertimientos, diseño PTAR, plan de ahorro PUEAA |
 | **INVIMA** | Concepto sanitario favorable y auditoría de Buenas Prácticas de Manufactura | Manual de BPM, plan HACCP, layout higiénico de planta |
 | **Operadores de Red (Enel, Celsia, EPM, etc.)** | Conexión a red eléctrica bajo CREG 030 / CREG 174 | Estudio de conexión simplificado, planos NTC 2050, dictamen RETIE |
+

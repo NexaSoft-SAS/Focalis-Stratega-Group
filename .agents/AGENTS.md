@@ -1,7 +1,7 @@
 # Focalis Stratega Group — Agent Instructions
 
 ## Overview
-Astro 6 static website for **Focalis Stratega Group**, a high-margin PMO firm specializing in regulatory compliance, engineering project management, and AI-assisted technical calculations for Colombian industrial clients (water, energy, carbon, agroindustry). Deployed on Cloudflare Pages as a fully static site. Contains three lead-capture form routes (`/sustainability`, `/ai-projects`, `/energy`) that integrate with an external Google Sheets serverless webhook (with fallback to Django REST API). Digital dashboards and AI algorithms are provided by sister company **Nexasoft SAS**.
+Astro 7 static website for **Focalis Stratega Group**, a high-margin PMO firm specializing in regulatory compliance, engineering project management, and AI-assisted technical calculations for Colombian industrial clients (water, energy, carbon, agroindustry). Deployed on Cloudflare Pages as a fully static site. Contains three lead-capture form routes (`/sustainability`, `/ai-projects`, `/energy`) that integrate with an external Google Sheets serverless webhook (with fallback to Django REST API). Digital dashboards and AI algorithms are provided by sister company **Nexasoft SAS**.
 
 ## Build & Run
 
@@ -16,7 +16,7 @@ pnpm preview              # Preview production build locally
 
 ## Tech Stack
 
-- **Framework:** Astro 6 (static output mode)
+- **Framework:** Astro 7 (static output mode)
 - **UI:** React 19, Tailwind CSS 4 (via `@tailwindcss/vite`)
 - **Component Library:** shadcn/ui (Radix primitives + Tailwind)
 - **Charts:** Recharts 3

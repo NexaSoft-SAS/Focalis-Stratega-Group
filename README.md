@@ -2,7 +2,7 @@
 
 Gerencia integral de proyectos de ingeniería (**PMO**), aseguramiento de cumplimiento regulatorio colombiano e ingeniería estratégica asistida por IA — enfocada en agua, energía solar fotovoltaica, carbono neutralidad y agroindustria.
 
-Sitio web estático de alto rendimiento desarrollado con **Astro 6**, **React 19** y **Tailwind CSS 4**, desplegado en **Cloudflare Pages**.
+Sitio web estático de alto rendimiento desarrollado con **Astro 7**, **React 19** y **Tailwind CSS 4**, desplegado en **Cloudflare Pages**.
 
 ---
 
@@ -18,7 +18,7 @@ Sitio web estático de alto rendimiento desarrollado con **Astro 6**, **React 19
 
 | Capa | Tecnología | Versión / Detalle |
 |---|---|---|
-| **Framework** | Astro | 6.x (`output: "static"`) |
+| **Framework** | Astro | 7.x (`output: "static"`) |
 | **Librería UI** | React | 19.x (Client Islands con `client:load` / `client:only="react"`) |
 | **Estilos** | Tailwind CSS | 4.x (integración directa con `@tailwindcss/vite`) |
 | **Componentes UI** | shadcn/ui / Radix UI | Primitivas accesibles (Button, Input, Textarea, Toast) |
