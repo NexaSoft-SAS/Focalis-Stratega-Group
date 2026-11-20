@@ -644,3 +644,4 @@ const RegulationsWidget = () => {
 };
 
 export default RegulationsWidget;
+

@@ -391,3 +391,4 @@ export const detailedSectors = [
     routeLabel: "Ver Metodología Focalis"
   }
 ];
+
