@@ -105,14 +105,14 @@ export default function BrochureFocalis() {
                     <div className="mt-1 text-[0.8rem] opacity-80 text-nowrap">
                       Estrategas de proyectos
                     </div>
-                    <div className="mt-4 flex flex-wrap gap-3 md:flex-row flex-col p-2">
+                    <div className="mt-4 mb-6 sm:mb-8 flex flex-col md:flex-row flex-wrap gap-2.5 p-1">
                       {ctaButtons.map((btn, i) => (
                         <CTAButton key={i} {...btn} />
                       ))}
                     </div>
                   </div>
                 </div>
-                <div className="mt-auto">
+                <div className="mt-auto pt-4 sm:pt-2">
                   <h2 className="text-4xl lg:text-5xl font-extrabold leading-tight">
                     FOCALIS GROUP
                   </h2>
