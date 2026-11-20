@@ -8,7 +8,7 @@ const HeaderComponent = ({ title, subtitle }) => {
   const description = energyData.heroContent.description;
 
   return (
-    <div className="relative overflow-hidden bg-gradient-to-br from-amber-600 via-orange-500 to-yellow-500 px-6 py-8 rounded-t-2xl text-white">
+    <div className="relative overflow-hidden bg-gradient-to-br from-amber-600 via-orange-500 to-yellow-500 px-4 py-6 sm:px-6 sm:py-8 rounded-t-2xl text-white">
       {/* Background decorations */}
       <div className="absolute top-0 right-0 w-48 h-48 bg-white/10 rounded-full transform translate-x-16 -translate-y-16 pointer-events-none" />
       <div className="absolute bottom-0 right-1/3 w-32 h-32 bg-yellow-300/10 rounded-full transform translate-y-12 pointer-events-none" />

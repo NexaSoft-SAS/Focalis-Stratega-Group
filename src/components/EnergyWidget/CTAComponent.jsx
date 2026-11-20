@@ -111,7 +111,7 @@ const CTAComponent = ({ onFormSubmit }) => {
 
   if (!isFormOpen) {
     return (
-      <div className="bg-gradient-to-br from-amber-500 via-orange-500 to-yellow-500 p-8 rounded-2xl text-white relative overflow-hidden shadow-lg">
+      <div className="bg-gradient-to-br from-amber-500 via-orange-500 to-yellow-500 px-4 py-8 sm:p-8 rounded-2xl text-white relative overflow-hidden shadow-lg">
         {/* Background decorations */}
         <div className="absolute top-0 right-0 w-44 h-44 bg-white/10 rounded-full transform translate-x-20 -translate-y-20 pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-36 h-36 bg-white/10 rounded-full transform -translate-x-16 translate-y-16 pointer-events-none" />
@@ -131,10 +131,10 @@ const CTAComponent = ({ onFormSubmit }) => {
 
           <Button
             onClick={() => setIsFormOpen(true)}
-            className="bg-white text-amber-700 hover:bg-amber-50 font-semibold px-6 sm:px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-sm sm:text-base border border-amber-200"
+            className="w-full sm:w-auto bg-white text-amber-700 hover:bg-amber-50 font-semibold px-4 sm:px-8 py-3.5 h-auto min-h-[44px] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] text-sm sm:text-base border border-amber-200 whitespace-normal leading-snug inline-flex items-center justify-center"
           >
-            <Sun className="w-5 h-5 mr-2 text-amber-600" />
-            Solicitar Diagnóstico Energético
+            <Sun className="w-5 h-5 mr-2 text-amber-600 shrink-0" />
+            <span>Solicitar Diagnóstico Energético</span>
           </Button>
 
           <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 text-sm text-white/90">
@@ -157,7 +157,7 @@ const CTAComponent = ({ onFormSubmit }) => {
   }
 
   return (
-    <div className="bg-white p-8 rounded-2xl border border-amber-200 shadow-xl">
+    <div className="bg-white px-4 py-6 sm:p-8 rounded-2xl border border-amber-200 shadow-xl">
       <div className="text-center mb-6">
         <div className="flex items-center justify-center w-12 h-12 bg-amber-100 rounded-full mx-auto mb-4">
           {isSubmitted ? (

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   BarChart,
   Bar,
@@ -8,8 +8,16 @@ import {
   Tooltip,
   Legend,
 } from "recharts";
+import { BarChart3, ChevronDown, Sparkles } from "lucide-react";
 
 const BenchmarkComponent = ({ benchmarkData }) => {
+  const [showMobileSummary, setShowMobileSummary] = useState(false);
+
+  const handleChartInteraction = () => {
+    if (!showMobileSummary) {
+      setShowMobileSummary(true);
+    }
+  };
   // Prepare data for the chart
   const chartData = [
     {
@@ -75,11 +83,16 @@ const BenchmarkComponent = ({ benchmarkData }) => {
       <div className="grid grid-cols-1 lg:grid-rows-3 gap-6">
         {/* Chart */}
         <div className="lg:col-span-2">
-          <div className="h-80">
+          <div 
+            className="h-80 cursor-pointer"
+            onClick={handleChartInteraction}
+            onTouchStart={handleChartInteraction}
+          >
             <ResponsiveContainer width="100%" height="100%">
               <BarChart
                 data={chartData}
                 margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
+                onClick={handleChartInteraction}
               >
                 <XAxis
                   dataKey="metric"
@@ -120,8 +133,39 @@ const BenchmarkComponent = ({ benchmarkData }) => {
           </div>
         </div>
 
-        {/* Improvement Cards */}
-        <div className="space-y-4">
+        {/* Mobile toggle prompt */}
+        <div className="sm:hidden -mt-2">
+          {!showMobileSummary ? (
+            <button
+              type="button"
+              onClick={() => setShowMobileSummary(true)}
+              className="w-full py-2.5 px-3.5 bg-gradient-to-r from-emerald-50 to-teal-50 hover:from-emerald-100 hover:to-teal-100 border border-emerald-200/80 rounded-xl text-xs font-semibold text-emerald-900 flex items-center justify-between transition-all duration-200 shadow-xs cursor-pointer"
+            >
+              <span className="flex items-center gap-2">
+                <BarChart3 className="w-4 h-4 text-emerald-600 shrink-0" />
+                <span>Toca el gráfico para ver mejoras proyectadas</span>
+              </span>
+              <ChevronDown className="w-4 h-4 text-emerald-600 shrink-0" />
+            </button>
+          ) : (
+            <div className="flex items-center justify-between px-1 py-1 text-xs text-emerald-900 font-semibold border-b border-emerald-100 mb-2">
+              <span className="flex items-center gap-1.5">
+                <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
+                Resumen de Mejoras Proyectadas
+              </span>
+              <button
+                type="button"
+                onClick={() => setShowMobileSummary(false)}
+                className="text-xs text-gray-500 hover:text-emerald-800 font-medium underline cursor-pointer"
+              >
+                Ocultar
+              </button>
+            </div>
+          )}
+        </div>
+
+        {/* Improvement Cards: hidden on mobile until interaction, always visible on desktop */}
+        <div className={`space-y-4 ${showMobileSummary ? 'block' : 'hidden sm:block'}`}>
           <h3 className="font-semibold text-gray-900 mb-4">
             Mejoras Proyectadas
           </h3>

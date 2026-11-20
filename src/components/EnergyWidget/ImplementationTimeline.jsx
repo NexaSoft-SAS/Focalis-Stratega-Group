@@ -45,7 +45,7 @@ const ImplementationTimeline = ({ phases = [] }) => {
   };
 
   return (
-    <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
+    <div className="bg-white p-4 sm:p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
       <div>
         <div className="flex items-center justify-between mb-4">
           <div>

@@ -49,8 +49,8 @@ const colorConfig = {
 
 const IncentivesPanel = ({ incentives = [] }) => {
   return (
-    <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6">
+    <div className="space-y-4">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
         <div>
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-100 rounded-full text-xs font-semibold text-amber-800 mb-2">
             Marco Regulatorio Ley 1715 de 2014 & Res. UPME 203
@@ -64,7 +64,7 @@ const IncentivesPanel = ({ incentives = [] }) => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
         {incentives.map((item) => {
           const colors = colorConfig[item.color] || colorConfig.amber;
           const Icon = typeof item.icon === 'string' ? (iconMap[item.icon] || ShieldCheck) : (item.icon || ShieldCheck);
@@ -72,7 +72,7 @@ const IncentivesPanel = ({ incentives = [] }) => {
           return (
             <div
               key={item.id}
-              className={`p-5 rounded-xl border ${colors.bg} ${colors.border} hover:shadow-md transition-all duration-300 flex flex-col justify-between`}
+              className={`p-4 sm:p-5 rounded-xl border ${colors.bg} ${colors.border} hover:shadow-md transition-all duration-300 flex flex-col justify-between`}
             >
               <div>
                 <div className="flex items-center justify-between gap-3 mb-3">
@@ -98,7 +98,7 @@ const IncentivesPanel = ({ incentives = [] }) => {
                 </p>
               </div>
 
-              <div className="mt-4 pt-3 border-t border-gray-200/60 flex items-center justify-between text-xs text-gray-500">
+              <div className="mt-4 pt-3 border-t border-gray-200/60 flex items-center justify-between gap-2 flex-wrap text-xs text-gray-500">
                 <span>Vía radicación SIREE / UPME</span>
                 <span className="font-medium text-gray-700">Focalis PMO</span>
               </div>

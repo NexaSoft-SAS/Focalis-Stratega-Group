@@ -53,31 +53,34 @@ const EnergyMetricsComponent = ({ data }) => {
   };
 
   return (
-    <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6">
+    <div className="space-y-4">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
         <div>
           <h2 className="text-xl font-semibold text-gray-900">
             Indicadores de Desempeño Energético y Tributario
           </h2>
-          <p className="text-sm text-gray-500 mt-0.5">
+          <p className="text-sm text-gray-600 mt-0.5">
             Métricas clave según ISO 50006 e incentivos certificados bajo Ley 1715 de 2014
           </p>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* Solar Progress Donut + YoY Trend */}
-        <div className="space-y-4">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
+        {/* Solar Progress Donut + YoY Trend Card */}
+        <div className="lg:col-span-5 bg-white p-4 sm:p-5 rounded-xl border border-amber-100 shadow-sm flex flex-col justify-between space-y-4">
           <div className="text-center">
-            <div className="relative w-48 h-48 mx-auto">
+            <span className="text-xs font-semibold text-amber-800 bg-amber-50 border border-amber-200/60 px-2.5 py-1 rounded-full inline-block mb-3">
+              Avance de Metas FNCER
+            </span>
+            <div className="relative w-44 h-44 sm:w-48 sm:h-48 mx-auto">
               <ResponsiveContainer width="100%" height="100%">
                 <PieChart>
                   <Pie
                     data={pieData}
                     cx="50%"
                     cy="50%"
-                    innerRadius={60}
-                    outerRadius={80}
+                    innerRadius={55}
+                    outerRadius={75}
                     startAngle={90}
                     endAngle={-270}
                     dataKey="value"
@@ -102,10 +105,10 @@ const EnergyMetricsComponent = ({ data }) => {
           </div>
 
           {/* Year over year trend */}
-          <div className="h-32">
+          <div className="h-28 sm:h-32">
             <ResponsiveContainer width="100%" height="100%">
               <LineChart data={solarProgress.yearOverYear}>
-                <XAxis dataKey="year" axisLine={false} tickLine={false} tick={{ fontSize: 12 }} />
+                <XAxis dataKey="year" axisLine={false} tickLine={false} tick={{ fontSize: 11 }} />
                 <YAxis hide />
                 <Tooltip 
                   formatter={(value, name) => [`${value}%`, name === 'savings' ? 'Ahorro' : 'Meta']}
@@ -134,19 +137,19 @@ const EnergyMetricsComponent = ({ data }) => {
         </div>
 
         {/* 4 Impact Metrics Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4">
           {Object.entries(impactMetrics).map(([key, metric]) => {
             const IconComponent = iconMap[metric.icon] || Zap;
             return (
               <div 
                 key={key} 
-                className="bg-gradient-to-br from-amber-50/50 via-white to-orange-50/30 p-4 rounded-xl border border-amber-100 hover:shadow-md transition-shadow duration-300 flex flex-col justify-between"
+                className="bg-white p-4 sm:p-5 rounded-xl border border-gray-200/80 hover:border-amber-300 hover:shadow-md transition-all duration-300 flex flex-col justify-between"
               >
                 <div className="flex items-center justify-between gap-3 mb-3">
                   <div className="flex items-center justify-center w-9 h-9 bg-amber-100 rounded-lg">
                     <IconComponent className="w-5 h-5 text-amber-600" />
                   </div>
-                  <span className="text-xs font-semibold text-amber-700 bg-amber-100/80 px-2.5 py-1 rounded-full">
+                  <span className="text-xs font-semibold text-amber-700 bg-amber-50 border border-amber-200/50 px-2.5 py-1 rounded-full">
                     {metric.trend}
                   </span>
                 </div>
