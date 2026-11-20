@@ -6,7 +6,6 @@ const navItems = [
   {
     path: '/',
     label: 'Inicio',
-    shortLabel: 'Inicio',
     icon: Home,
     activeColor: 'bg-slate-900 text-white shadow-md shadow-slate-900/20',
     hoverColor: 'hover:bg-slate-100 text-slate-700'
@@ -14,7 +13,6 @@ const navItems = [
   {
     path: '/sustainability',
     label: 'Sostenibilidad',
-    shortLabel: 'Sostenibilidad',
     icon: Leaf,
     activeColor: 'bg-emerald-600 text-white shadow-md shadow-emerald-600/25',
     hoverColor: 'hover:bg-emerald-50 hover:text-emerald-700 text-gray-700'
@@ -22,7 +20,6 @@ const navItems = [
   {
     path: '/ai-projects',
     label: 'Ingeniería IA',
-    shortLabel: 'IA',
     icon: Cpu,
     activeColor: 'bg-blue-600 text-white shadow-md shadow-blue-600/25',
     hoverColor: 'hover:bg-blue-50 hover:text-blue-700 text-gray-700'
@@ -30,7 +27,6 @@ const navItems = [
   {
     path: '/energy',
     label: 'Transición Solar',
-    shortLabel: 'Solar',
     icon: Sun,
     activeColor: 'bg-amber-500 text-white shadow-md shadow-amber-500/25',
     hoverColor: 'hover:bg-amber-50 hover:text-amber-700 text-gray-700'
@@ -58,8 +54,8 @@ const Navbar = ({ currentPath = '' }) => {
   };
 
   return (
-    <nav className="max-w-6xl mx-auto mb-6 sticky top-3 z-50 transition-all duration-300">
-      <div className="bg-white/92 backdrop-blur-md rounded-2xl border border-gray-200/90 shadow-md hover:shadow-lg transition-shadow px-3 py-2 sm:px-5 sm:py-2.5">
+    <nav className="w-full max-w-6xl mx-auto mb-6 sticky top-3 z-50 transition-all duration-300">
+      <div className="w-full bg-white/92 backdrop-blur-md rounded-2xl border border-gray-200/90 shadow-md hover:shadow-lg transition-shadow px-3 py-2 sm:px-5 sm:py-2.5">
         <div className="flex items-center justify-between gap-2 sm:gap-4">
           
           {/* Logo / Brand Link to Home */}
@@ -67,6 +63,7 @@ const Navbar = ({ currentPath = '' }) => {
             href="/"
             className="flex items-center gap-2 group flex-shrink-0 py-1 focus:outline-none"
             title="Focalis Stratega Group - Inicio"
+            aria-label="Focalis Stratega Group - Inicio"
           >
             <img
               src={focalisLogo.src}
@@ -78,8 +75,8 @@ const Navbar = ({ currentPath = '' }) => {
             </span>
           </a>
 
-          {/* Navigation Links */}
-          <div className="flex items-center gap-1 sm:gap-2">
+          {/* Navigation Links: Icons on Mobile, Icon + Label on Desktop */}
+          <div className="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
             {navItems.map((item) => {
               const active = isItemActive(item.path);
               const Icon = item.icon;
@@ -89,9 +86,10 @@ const Navbar = ({ currentPath = '' }) => {
                   key={item.path}
                   href={item.path}
                   title={item.label}
+                  aria-label={item.label}
                   aria-current={active ? 'page' : undefined}
                   className={`
-                    flex items-center gap-1.5 px-2.5 sm:px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold
+                    flex items-center justify-center p-2 md:px-3.5 md:py-1.5 rounded-xl text-xs sm:text-sm font-semibold
                     transition-all duration-200 touch-manipulation select-none
                     ${active
                       ? `${item.activeColor} scale-[1.02]`
@@ -99,10 +97,9 @@ const Navbar = ({ currentPath = '' }) => {
                     }
                   `}
                 >
-                  <Icon className="w-4 h-4 flex-shrink-0" />
-                  <span className="hidden md:inline">{item.label}</span>
-                  <span className="inline md:hidden text-[11px] sm:text-xs">
-                    {item.shortLabel}
+                  <Icon className="w-5 h-5 md:w-4 md:h-4 flex-shrink-0" />
+                  <span className="hidden md:inline ml-1.5 whitespace-nowrap">
+                    {item.label}
                   </span>
                 </a>
               );
@@ -116,4 +113,3 @@ const Navbar = ({ currentPath = '' }) => {
 };
 
 export default Navbar;
-
