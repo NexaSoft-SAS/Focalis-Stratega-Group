@@ -38,12 +38,14 @@ Sitio web estático de alto rendimiento desarrollado con **Astro 7**, **React 19
 | `/sustainability` | **Dashboard de Sostenibilidad** | Panel interactivo de cumplimiento ambiental, gestión hídrica (Res. 0631 / ISO 14046), huella de carbono (Ley 2169 / ISO 14064) y formulario de captación. |
 | `/ai-projects` | **Ingeniería Asistida por IA** | Catálogo de soluciones algorítmicas por reto técnico industrial, dimensionamiento optimizado y formulario de solicitud de proyectos. |
 | `/energy` | **Transición Energética Solar** | Dashboard de autogeneración solar, incentivos tributarios UPME (Ley 1715 de 2014), autogeneración CREG 030, certificación RETIE y proyección financiera (ROI). |
+| `/normatividad` | **Compendio Técnico Oficial** | Matriz regulatoria completa e interactiva con buscador en vivo, filtros por sector, tabla comparativa ampliada y fichas técnicas detalladas por sector (Agua, Energía, Carbono, Alimentos, PMO). |
 | `/renewable-energies` | *(Redirect 301)* | Redirección permanente hacia `/energy` gestionada a través de `public/_redirects`. |
+| `/regulations` | *(Redirect 301)* | Redirección permanente hacia `/normatividad` gestionada a través de `public/_redirects`. |
 
 ### Menú de Navegación Multi-Ruta (`Navbar`)
-Todas las rutas de dashboards técnicos cuentan con una barra de navegación reutilizable (`src/components/Navigation/Navbar.jsx`):
-- **Desktop:** Barra flotante superior glassmorphism (`backdrop-blur-md bg-white/92`) con logo corporativo, enlaces a las 4 rutas y resaltado de la página activa mediante *pills* de color temático (Esmeralda para Sostenibilidad, Azul para IA, Ámbar para Solar, Pizarra para Inicio).
-- **Mobile:** Barra compacta con botones táctiles ergonómicos e iconos Lucide para navegación ágil en pantallas pequeñas.
+Todas las rutas cuentan con una barra de navegación reutilizable (`src/components/Navigation/Navbar.jsx`):
+- **Desktop:** Barra flotante superior glassmorphism (`backdrop-blur-md bg-white/92`) con logo corporativo, enlaces a las 5 rutas y resaltado de la página activa mediante *pills* de color temático (Esmeralda para Sostenibilidad, Azul para IA, Ámbar para Solar, Índigo para Normatividad, Pizarra para Inicio).
+- **Mobile:** Barra compacta con botones táctiles ergonómicos e iconos Lucide para navegación ágil en pantallas pequeñas sin desbordamiento.
 
 ---
 

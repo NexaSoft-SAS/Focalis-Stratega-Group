@@ -1,0 +1,18 @@
+---
+import "@/styles/global.css";
+import Layout from "@/layouts/Layout.astro";
+import Navbar from "@/components/Navigation/Navbar";
+import RegulationsWidget from "@/components/Regulations/RegulationsWidget";
+---
+
+<Layout
+  title="Compendio Técnico de Normatividad y Estándares Industriales | Focalis Stratega Group"
+  description="Consulte el marco regulatorio oficial colombiano (CAR, UPME, DIAN, CREG, INVIMA) y estándares ISO aplicables a proyectos industriales de agua, energía, carbono y agroindustria con dirección técnica PMO."
+>
+  <div
+    class="min-h-screen w-full overflow-x-hidden bg-gradient-to-br from-slate-50 via-sky-50 to-indigo-50 py-6 sm:py-8 px-3 sm:px-4"
+  >
+    <Navbar currentPath="/normatividad" client:load />
+    <RegulationsWidget client:only="react" />
+  </div>
+</Layout>

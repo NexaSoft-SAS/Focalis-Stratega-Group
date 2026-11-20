@@ -56,6 +56,9 @@ src/
 │   │   └── data/energyData.js
 │   ├── Navigation/        # Global multi-route navigation
 │   │   └── Navbar.jsx     # Responsive sticky navbar (Desktop glassmorphism + Mobile compact icons)
+│   ├── Regulations/       # Complete technical regulatory compendium & interactive matrix
+│   │   ├── RegulationsWidget.jsx # Hero, search, filter chips, complemented table & detailed sector fiches
+│   │   └── data/regulationsData.js # Comprehensive 5-sector matrix (Agua, Energía, Carbono, Alimentos, PMO)
 │   ├── SustainabilityWidget/ # Environmental compliance & savings dashboard
 │   │   ├── SustainabilityWidget.jsx
 │   │   ├── HeaderComponent.jsx
@@ -75,12 +78,13 @@ src/
 │   ├── index.astro        # Homepage → BrochureFocalis (services + regulations table)
 │   ├── ai-projects.astro  # AI engineering → Navbar + AIWidget (client:only)
 │   ├── energy.astro       # Solar energy → Navbar + EnergyWidget (client:only)
+│   ├── normatividad.astro # Technical compendium → Navbar + RegulationsWidget (client:only)
 │   ├── renewable-energies.astro # Legacy route (redirected to /energy via _redirects)
 │   └── sustainability.astro # Compliance dashboard → Navbar + SustainabilityWidget (client:only)
 ├── styles/                # Global CSS
 public/
-├── _redirects             # Cloudflare Pages 301 redirects (/renewable-energies -> /energy)
-└── REGULATIONS.md         # Publicly accessible compendium
+├── _redirects             # Cloudflare Pages 301 redirects (/renewable-energies -> /energy, /regulations -> /normatividad)
+└── REGULATIONS.md         # Publicly accessible compendium (raw markdown source)
 docs/
 ├── REGULATIONS.md         # Full Colombian regulatory compendium by sector
 └── CLASIFICACION_SERVICIOS.md # Full technical classification of services & engagement model

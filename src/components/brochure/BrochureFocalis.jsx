@@ -48,12 +48,12 @@ const RegulationsTable = () => (
         📋 Consulta de Normatividad Vigente (Colombia)
       </span>
       <a 
-        href="/REGULATIONS.md" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        className="text-[10px] text-sky-200 hover:text-white underline transition-colors"
+        href="/normatividad" 
+        className="text-[11px] text-sky-200 hover:text-white underline transition-colors font-medium flex items-center gap-1"
+        title="Consultar compendio técnico completo de normatividad e incentivos"
       >
-        Ver compendio técnico
+        <span>Ver compendio técnico</span>
+        <span aria-hidden="true">→</span>
       </a>
     </div>
     <div className="overflow-x-auto">

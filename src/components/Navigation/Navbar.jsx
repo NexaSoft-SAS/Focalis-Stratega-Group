@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Home, Leaf, Cpu, Sun } from 'lucide-react';
+import { Home, Leaf, Cpu, Sun, BookOpen } from 'lucide-react';
 import focalisLogo from '@/assets/Logo Focalis V1.png';
 
 const navItems = [
@@ -30,6 +30,13 @@ const navItems = [
     icon: Sun,
     activeColor: 'bg-amber-500 text-white shadow-md shadow-amber-500/25',
     hoverColor: 'hover:bg-amber-50 hover:text-amber-700 text-gray-700'
+  },
+  {
+    path: '/normatividad',
+    label: 'Normatividad',
+    icon: BookOpen,
+    activeColor: 'bg-indigo-600 text-white shadow-md shadow-indigo-600/25',
+    hoverColor: 'hover:bg-indigo-50 hover:text-indigo-700 text-gray-700'
   }
 ];
 
